@@ -3,7 +3,7 @@ from random import shuffle
 import random
 
 def generate_input():
-    generate_small_output()
+    generate_medium_input()
 
 def generate_large_input():
     f = open("../deliverable1/inputs/large/parameters.txt", "w")
@@ -41,7 +41,7 @@ def generate_large_input():
 def generate_medium_input():
     f = open("../deliverable1/inputs/medium/parameters.txt", "w")
 
-    list = [i for i in range(1000)]
+    list = [i for i in range(500)]
     shuffle(list)
     write_list(f, list[0:50])
     shuffle(list)
@@ -90,8 +90,8 @@ def generate_medium_input():
         G.add_node(i)
 
     for i in range(125000):
-        x = random.randint(0, 500)
-        y = random.randint(0, 500)
+        x = random.randint(0, 499)
+        y = random.randint(0, 499)
         if (x != y and not G.has_edge(x, y) and not G.has_edge(y, x)):
             G.add_edge(x, y)
 
@@ -143,33 +143,33 @@ def write_list(f, list):
         f.write("'")
         f.write(str(i))
         f.write("'")
-        f.write(",")
+        f.write(", ")
     f.write("]\n")
 
 def generate_small_input():
-    f = open("../deliverable1/inputs/small/parameters.txt", "w")
-
-    write_rowdy_group(f, 0, 5)
-    write_rowdy_group(f, 5, 10)
-    write_rowdy_group(f, 10, 15)
-    write_rowdy_group(f, 15, 20)
-    write_rowdy_group(f, 20, 25)
-
-    f.close()
+    # f = open("../deliverable1/inputs/small/parameters.txt", "w")
+    #
+    # write_rowdy_group(f, 0, 5)
+    # write_rowdy_group(f, 5, 10)
+    # write_rowdy_group(f, 10, 15)
+    # write_rowdy_group(f, 15, 20)
+    # write_rowdy_group(f, 20, 25)
+    #
+    # f.close()
 
     G = networkx.Graph()
     for i in range(27):
         G.add_node(i)
 
-    add_friend_group(G, [1, 2, 3, 6])
-    add_friend_group(G, [4, 5, 6])
-    add_friend_group(G, [7, 8, 9])
-    add_friend_group(G, [10, 11, 12])
-    add_friend_group(G, [13, 14, 15])
-    add_friend_group(G, [16, 17, 18])
-    add_friend_group(G, [19, 20, 21])
-    add_friend_group(G, [22, 23, 24])
-    add_friend_group(G, [25, 26, 27])
+    add_friend_group(G, [0, 1, 2, 5])
+    add_friend_group(G, [3, 4, 5])
+    add_friend_group(G, [6, 7, 8])
+    add_friend_group(G, [9, 10, 11])
+    add_friend_group(G, [12, 13, 14])
+    add_friend_group(G, [15, 16, 17])
+    add_friend_group(G, [18, 19, 20])
+    add_friend_group(G, [21, 22, 23])
+    add_friend_group(G, [24, 25, 26])
 
     networkx.write_gml(G, "../deliverable1/inputs/small/graph.gml")
 
@@ -193,7 +193,7 @@ def write_rowdy_group(f, min, max):
         f.write("'")
         f.write(str(i))
         f.write("'")
-        f.write(",")
+        f.write(", ")
     f.write("]\n")
 
 generate_input()
