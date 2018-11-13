@@ -3,40 +3,90 @@ from random import shuffle
 import random
 
 def generate_input():
-    generate_medium_input()
+    generate_large_input()
+    generate_large_output()
 
 def generate_large_input():
     f = open("../deliverable1/inputs/large/parameters.txt", "w")
 
-    write_rowdy_group(f, 0, 100)
-    write_rowdy_group(f, 100, 200)
-    write_rowdy_group(f, 200, 300)
-    write_rowdy_group(f, 300, 400)
-    write_rowdy_group(f, 400, 500)
+    list = [i for i in range(1000)]
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
+    shuffle(list)
+    write_list(f, list[0:100])
 
     f.close()
 
     G = networkx.Graph()
-    for i in range(500):
+    for i in range(1000):
         G.add_node(i)
 
-    add_edges_within(G, 0, 100)
-    add_edges_within(G, 100, 200)
-    add_edges_within(G, 200, 300)
-    add_edges_within(G, 300, 400)
-    add_edges_within(G, 400, 500)
+    for i in range(500000):
+        x = random.randint(0, 999)
+        y = random.randint(0, 999)
+        if (x != y and not G.has_edge(x, y) and not G.has_edge(y, x)):
+            G.add_edge(x, y)
 
-    G.add_edge(99, 100)
-    G.add_edge(99, 101)
-    G.add_edge(99, 102)
-    G.add_edge(99, 103)
-
-    G.add_edge(199, 200)
-    G.add_edge(199, 201)
-    G.add_edge(199, 202)
-    G.add_edge(199, 203)
 
     networkx.write_gml(G, "../deliverable1/inputs/large/graph.gml")
+
+def generate_large_output():
+    f = open("../deliverable1/outputs/large.out", "w")
+
+    list = [i for i in range(1000)]
+    shuffle(list)
+    print(list)
+
+    write_list(f, list[0:100])
+    write_list(f, list[100:200])
+    write_list(f, list[200:300])
+    write_list(f, list[300:400])
+    write_list(f, list[400:500])
+    write_list(f, list[500:600])
+    write_list(f, list[600:700])
+    write_list(f, list[700:800])
+    write_list(f, list[800:900])
+    write_list(f, list[900:1000])
+
+    f.close()
 
 def generate_medium_input():
     f = open("../deliverable1/inputs/medium/parameters.txt", "w")
