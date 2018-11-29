@@ -61,9 +61,17 @@ def solve(graph, num_buses, size_bus, constraints):
     return
 
 def cost(s, r):
+    r_copy = np.matrix(r, copy=True)
+    permissible = True
+    for 
+
+
     bus_costs = s * r * s.T
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
+
+def check_row(row):
+
 
 def take_step(bus_seats,bus_count):
     bus_from, bus_to = np.random.choice(bus_count, 2, replace=False)
