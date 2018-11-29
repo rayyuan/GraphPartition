@@ -53,11 +53,16 @@ def solve(graph, num_buses, size_bus, constraints):
     for i in range(len(random_solution)):
         for person in random_solution[i]:
             bus_list.itemset((i, int(person)), 1)
-    # for i in range(len(bus_list)):
-    #     for j in range(size_bus):
-    #         print(str(bus_list[i][j]) + ", ", end="")
-    #     print()
+
+    r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes)
+    print(cost(bus_list, r))
+
     return
+
+def cost(s, r):
+    bus_costs = s * r * s.T
+    total_bus_cost = np.trace(bus_costs)
+    return total_bus_cost
 
 
 def find_random(graph, num_buses, size_bus):
@@ -109,11 +114,6 @@ def main():
             output_file.write(solution)
 
             output_file.close()
-
-def cost(s, r):
-    bus_costs = s * r * s.T
-    total_bus_cost = np.trace(bus_costs)
-    return total_bus_cost
 
 if __name__ == '__main__':
     main()
