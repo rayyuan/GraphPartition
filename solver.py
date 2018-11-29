@@ -50,11 +50,16 @@ def parse_input(folder_name):
 def solve(graph, num_buses, size_bus, constraints):
     random_solution, num_people = find_random(graph, num_buses, size_bus)
     print("Total Num People: " + str(num_people))
+
     bus_list = np.zeros((num_buses, num_people))
     for i in range(len(random_solution)):
         for person in random_solution[i]:
             bus_list.itemset((i, int(person)), 1)
 
+    count = 0
+    for i in range(len(bus_list)):
+        count += len(count_ones(bus_list[i].tolist()))
+    print("Adjacent has: " + str(count))
     r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1
 
     solution = anneal(bus_list, r, num_buses, size_bus, constraints)
