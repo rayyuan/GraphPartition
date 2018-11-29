@@ -110,6 +110,7 @@ def anneal(pos_current, r, num_buses, temp=1.0, temp_min=0.00001, alpha=0.9, n_i
         for i in range(0, n_iter):
             pos_new = take_step(pos_current, num_buses)
             cost_new = cost(pos_new, r)
+            print(cost_new)
             p_accept = prob_accept(cost_old, cost_new, temp)
             if p_accept > np.random.random():
                 pos_current = pos_new
