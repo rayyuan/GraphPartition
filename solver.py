@@ -55,7 +55,7 @@ def solve(graph, num_buses, size_bus, constraints):
         for person in random_solution[i]:
             bus_list.itemset((i, int(person)), 1)
 
-    r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes)
+    r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1
 
     print(anneal(bus_list, r, num_buses, size_bus, num_people))
 
@@ -106,23 +106,23 @@ def take_step(starting_bus_seats,bus_count,size_bus,num_people):
     # bus_seats[bus_to, pos1] =
     # bus_seats[bus_to, pos2] =
     bus_seats = np.matrix(starting_bus_seats, copy=True)
-    person = random.randint(num_people)
+    person = random.randint(0, num_people-1)
     person_bus = 0
     for i in range(bus_count):
-        if bus_seats[i][person] == 1:
+        if bus_seats[i, person] == 1:
             person_bus = i
             break
     if bus_count == 1:
         return bus_seats
     switch_bus = person_bus
     while switch_bus == person_bus:
-        switch_bus = random.randint(bus_count)
-    bus_seats[bus, person] = 0
+        switch_bus = random.randint(0, bus_count-1)
+    bus_seats[person_bus, person] = 0
     bus_seats[switch_bus, person] = 1
     people_in_switch = np.where(bus_seats[switch_bus] == 1)
     if len(people_in_switch) > size_bus:
         rand_person = np.random.choice(people_in_switch)
-        bus_seats[bus, rand_person] = 1
+        bus_seats[person_bus, rand_person] = 1
         bus_seats[switch_bus, rand_person] = 0
     return bus_seats
 
