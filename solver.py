@@ -55,7 +55,8 @@ def solve(graph, num_buses, size_bus, constraints):
             bus_list.itemset((i, int(person)), 1)
 
     r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes)
-    print(cost(bus_list, r))
+
+    print(anneal(bus_list, r, num_buses))
 
     return
 
@@ -100,6 +101,24 @@ def find_random(graph, num_buses, size_bus):
     return rand_sol, num_nodes
 
 
+def anneal(pos_current, r, num_buses, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100, audit=False):
+    cost_old = cost(pos_current, r)
+
+    audit_trail = []
+
+    while temp > temp_min:
+        for i in range(0, n_iter):
+            pos_new = take_step(pos_current, num_buses)
+            cost_new = cost(pos_new, r)
+            p_accept = prob_accept(cost_old, cost_new, temp)
+            if p_accept > np.random.random():
+                pos_current = pos_new
+                cost_old = cost_new
+            if audit:
+                audit_trail.append((cost_new, cost_old, temp, p_accept))
+        temp *= alpha
+
+    return pos_current, cost_old, audit_trail
 
 def main():
     '''
