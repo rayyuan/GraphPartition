@@ -61,6 +61,7 @@ def solve(graph, num_buses, size_bus, constraints):
 
     return
 
+
 def cost(s, r, constraints):
     s_copy = np.matrix(s, copy=True)
     for i in range(len(s_copy)):
@@ -71,16 +72,16 @@ def cost(s, r, constraints):
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
 
+
 def check_row(row, constraints):
     permissible = True
     for list in constraints:
-        list_permissible = False
-        for i in list:
-            print(row[i])
-            print(row[i].shape)
-            list_permissible = list_permissible or (int(row[i]) == 0)
-        permissible = permissible and list_permissible
+        people_in_curr_bus = set(np.where(row[0] == 1)[0])
+        permissible = permissible and not people_in_curr_bus.issubset(list)
+        if not permissible:
+            return False
     return permissible
+
 
 def take_step(starting_bus_seats,bus_count,size_bus,num_people):
     # bus_seats = np.matrix(starting_bus_seats, copy=True)
@@ -190,7 +191,7 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
-    size_categories = ["large", "medium", "large"]
+    size_categories = ["medium", "medium", "large"]
     if not os.path.isdir(path_to_outputs):
         os.mkdir(path_to_outputs)
 
