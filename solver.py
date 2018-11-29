@@ -48,11 +48,15 @@ def parse_input(folder_name):
 
 
 def solve(graph, num_buses, size_bus, constraints):
-    random_solution = find_random(graph, num_buses, size_bus)
-    for bus in random_solution:
-        for person in bus:
-            print(person + " ", end="")
-        print()
+    random_solution, num_people = find_random(graph, num_buses, size_bus)
+    bus_list = np.zeros((num_buses, num_people))
+    # for i in range(len(random_solution)):
+    #     for person in random_solution[i]:
+    #         bus_list.itemset((i, int(person)), 1)
+    # for i in range(len(bus_list)):
+    #     for j in range(size_bus):
+    #         print(str(bus_list[i][j]) + ", ", end="")
+    #     print()
     return
 
 
@@ -70,7 +74,7 @@ def find_random(graph, num_buses, size_bus):
         if end >= num_nodes:
             break
         rand_sol.append(node_list[start:end])
-    return rand_sol
+    return rand_sol, num_nodes
 
 
 
@@ -81,7 +85,7 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
-    size_categories = ["small", "medium", "large"]
+    size_categories = ["large", "medium", "large"]
     if not os.path.isdir(path_to_outputs):
         os.mkdir(path_to_outputs)
 
