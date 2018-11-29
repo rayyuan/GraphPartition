@@ -50,9 +50,9 @@ def parse_input(folder_name):
 def solve(graph, num_buses, size_bus, constraints):
     random_solution, num_people = find_random(graph, num_buses, size_bus)
     bus_list = np.zeros((num_buses, num_people))
-    # for i in range(len(random_solution)):
-    #     for person in random_solution[i]:
-    #         bus_list.itemset((i, int(person)), 1)
+    for i in range(len(random_solution)):
+        for person in random_solution[i]:
+            bus_list.itemset((i, int(person)), 1)
     # for i in range(len(bus_list)):
     #     for j in range(size_bus):
     #         print(str(bus_list[i][j]) + ", ", end="")
