@@ -1,12 +1,16 @@
 import networkx as nx
 import os
+from random import shuffle
+import math
+import numpy as np
+
 
 ###########################################
 # Change this variable to the path to 
 # the folder containing all three input
 # size category folders
 ###########################################
-path_to_inputs = "./all_inputs"
+path_to_inputs = "../deliverable1/inputs"
 
 ###########################################
 # Change this variable if you want
@@ -42,9 +46,42 @@ def parse_input(folder_name):
 
     return graph, num_buses, size_bus, constraints
 
-def solve():
-    #TODO: Write this method as you like. We'd recommend changing the arguments here as well
-    pass
+
+def solve(graph, num_buses, size_bus, constraints):
+    random_solution = find_random(graph, num_buses, size_bus)
+    for bus in random_solution:
+        for person in bus:
+            print(person + " ")
+    return
+
+
+def find_random(graph, num_buses, size_bus):
+    nodes = graph.nodes()
+    shuffle(nodes)
+    rand_sol = []
+    num_nodes = len(nodes)
+    for i in range(num_buses):
+        start = i * size_bus
+        end = (i+1) * size_bus
+        if end >= num_nodes:
+            break
+        rand_sol.append(nodes[start:end])
+    return rand_sol
+
+
+#
+# def find_random(graph, num_buses, size_bus, constraints):
+#     nodes = graph.nodes_iter()
+#     buses = []
+#     for i in range(num_buses):
+#         buses.append([])
+#
+# def checkBus(bus, size, rowdyGroups, toAdd):
+#     return len(bus) <= size and not containsRowdy(bus, rowdyGroups, toAdd)
+#
+# def containsRowdy(bus, rowdyGroups, toAdd):
+
+
 
 def main():
     '''
