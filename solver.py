@@ -186,7 +186,9 @@ def main():
             buses = solution[0]
             count = 0
             for i in range(len(buses)):
-                count += len(count_ones(buses[i].tolist()[0]))
+                people = len(count_ones(buses[i].tolist()[0]))
+                count += people
+                print("Bus " + str(i) + " has " + str(people) + " people.")
             print("Total Num People After: " + str(count))
             #TODO: modify this to write your solution to your 
             #      file properly as it might not be correct to 

@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/GraphPartition$solver.coverage" NAME="solver Coverage Results" MODIFIED="1543534598905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GraphPartition$solver.coverage" NAME="solver Coverage Results" MODIFIED="1543534975704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GraphPartition$generate_input.coverage" NAME="generate input Coverage Results" MODIFIED="1542071462149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jared" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -76,8 +76,8 @@
       <file leaf-file-name="solver.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="114" column="23" lean-forward="true" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -184,7 +184,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="x" value="690" />
+    <option name="y" value="-26" />
     <option name="width" value="1680" />
     <option name="height" value="828" />
   </component>
@@ -447,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543534304375</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed losing people">
+      <created>1543534628919</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543534628919</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -460,7 +468,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21930745" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21930745" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -495,7 +503,8 @@
     <MESSAGE value="fixed more than max num people in one bus" />
     <MESSAGE value="some people are now lost" />
     <MESSAGE value="people lost when creating friendship matrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="people lost when creating friendship matrix" />
+    <MESSAGE value="fixed losing people" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed losing people" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -663,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="114" column="23" lean-forward="true" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
