@@ -54,12 +54,14 @@ def solve(graph, num_buses, size_bus, constraints):
     for i in range(len(random_solution)):
         for person in random_solution[i]:
             bus_list.itemset((i, int(person)), 1)
-
+    # for row in bus_list:
+    #     count = np.where(row == 1)[0]
+    #     print(len(count))
     r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1
 
-    print(anneal(bus_list, r, num_buses, size_bus, num_people, constraints))
+    solution = anneal(bus_list, r, num_buses, size_bus, num_people, constraints)
 
-    return
+    return solution
 
 
 def cost(s, r, constraints):
@@ -67,7 +69,6 @@ def cost(s, r, constraints):
     for i in range(len(s_copy)):
         if not check_row(s_copy[i], constraints):
             s_copy[i] = 0
-
     bus_costs = s_copy * r * s_copy.T
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
@@ -123,12 +124,16 @@ def take_step(starting_bus_seats,bus_count,size_bus,num_people):
     # bus_seats[bus_to, pos1] =
     # bus_seats[bus_to, pos2] =
     bus_seats = np.matrix(starting_bus_seats, copy=True)
-    person = random.randint(0, num_people-1)
+
+    people = []
     person_bus = 0
-    for i in range(bus_count):
-        if bus_seats[i, person] == 1:
-            person_bus = i
-            break
+    people_in_person_bus = 0
+    while people_in_person_bus is 0:
+        person_bus = random.randint(0, bus_count-1)
+        people = count_ones(bus_seats[person_bus].tolist()[0])
+        people_in_person_bus = len(people)
+    person = np.random.choice(people)
+
     if bus_count == 1:
         return bus_seats
     switch_bus = person_bus
@@ -136,15 +141,22 @@ def take_step(starting_bus_seats,bus_count,size_bus,num_people):
         switch_bus = random.randint(0, bus_count-1)
     bus_seats[person_bus, person] = 0
     bus_seats[switch_bus, person] = 1
-    people_in_switch = np.where(bus_seats[switch_bus] == 1)
-    if len(people_in_switch) > size_bus:
+    people_in_switch = count_ones(bus_seats[switch_bus].tolist()[0])
+    if len(people_in_switch) >= size_bus:
         rand_person = np.random.choice(people_in_switch)
         bus_seats[person_bus, rand_person] = 1
         bus_seats[switch_bus, rand_person] = 0
     return bus_seats
 
+def count_ones(bus):
+    ones = []
+    for i in range(len(bus)):
+        if bus[i] == 1:
+            ones.append(i)
+    return ones
+
 def prob_accept(cost_old, cost_new, temp):
-    a = 1 if cost_new < cost_old else np.exp((cost_old - cost_new) / temp)
+    a = 1 if cost_new < cost_old else np.exp((cost_old - cost_new) / (temp))
     return a
 
 def find_random(graph, num_buses, size_bus):
@@ -208,12 +220,13 @@ def main():
             graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
             solution = solve(graph, num_buses, size_bus, constraints)
             output_file = open(output_category_path + "/" + input_name + ".out", "w")
-
+            arr = solution[0]
+            for i in range(len(arr)):
+                print(arr[i])
             #TODO: modify this to write your solution to your 
             #      file properly as it might not be correct to 
             #      just write the variable solution to a file
             output_file.write(solution)
-
             output_file.close()
 
 if __name__ == '__main__':
