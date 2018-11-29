@@ -1,7 +1,6 @@
 import networkx as nx
 import os
 from random import shuffle
-import math
 import numpy as np
 import random
 
@@ -50,16 +49,15 @@ def parse_input(folder_name):
 
 def solve(graph, num_buses, size_bus, constraints):
     random_solution, num_people = find_random(graph, num_buses, size_bus)
+    print("Total Num People: " + str(num_people))
     bus_list = np.zeros((num_buses, num_people))
     for i in range(len(random_solution)):
         for person in random_solution[i]:
             bus_list.itemset((i, int(person)), 1)
-    # for row in bus_list:
-    #     count = np.where(row == 1)[0]
-    #     print(len(count))
+
     r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1
 
-    solution = anneal(bus_list, r, num_buses, size_bus, num_people, constraints)
+    solution = anneal(bus_list, r, num_buses, size_bus, constraints)
 
     return solution
 
@@ -84,45 +82,8 @@ def check_row(row, constraints):
     return permissible
 
 
-def take_step(starting_bus_seats,bus_count,size_bus,num_people):
-    # bus_seats = np.matrix(starting_bus_seats, copy=True)
-    # bus_from, bus_to = np.random.choice(bus_count, 2, replace=False)
-    #
-    # bus_from_people = np.where(bus_seats[bus_from] == 1)
-    # bus_to_people = np.where(bus_seats[bus_to] == 1)
-    # people_in_bus_from = len(bus_from_people)
-    # people_in_bus_to = len(bus_to_people)
-    # bus_from_capacity = people_in_bus_from >= size_bus
-    # bus_to_capacity = people_in_bus_to >= size_bus
-    #
-    # if bus_from_capacity and not bus_to_capacity:
-    #     pos1 = np.random.choice(bus_from_people)
-    #     pos2 = random.randint(num_people)
-    # elif bus_to_capacity and not bus_from_capacity:
-    #     pos1 = random.randint(num_people)
-    #     pos2 = np.random.choice(bus_to_people)
-    # elif bus_to_capacity and bus_from_capacity:
-    #     pos1 = np.random.choice(bus_from_people)
-    #     pos2 = np.random.choice(bus_to_people)
-    # else:
-    #     pos1 = random.randint(num_people)
-    #     pos2 = random.randint(num_people)
-    #
-    # pos1_val = bus_seats[bus_from, pos1]
-    # pos2_val = bus_seats[bus_to, pos2]
-    # pos3_val = bus_seats[bus_to, pos1]
-    # pos4_val = bus_seats[bus_from, pos2]
-    # if(pos1_val ==1):
-    #     bus_seats[bus_to, pos1] =1
-    #     bus_seats[bus_from, pos1] = 0
-    # if (pos1_val == 1):
-    #     bus_seats[bus_to, pos1] = 1
-    #     bus_seats[bus_from, pos1] = 0
-    #
-    # bus_seats[bus_from, pos2] =
-    # bus_seats[bus_from, pos1] =
-    # bus_seats[bus_to, pos1] =
-    # bus_seats[bus_to, pos2] =
+def take_step(starting_bus_seats,bus_count,size_bus):
+
     bus_seats = np.matrix(starting_bus_seats, copy=True)
 
     people = []
@@ -148,6 +109,7 @@ def take_step(starting_bus_seats,bus_count,size_bus,num_people):
         bus_seats[switch_bus, rand_person] = 0
     return bus_seats
 
+
 def count_ones(bus):
     ones = []
     for i in range(len(bus)):
@@ -155,9 +117,11 @@ def count_ones(bus):
             ones.append(i)
     return ones
 
+
 def prob_accept(cost_old, cost_new, temp):
     a = 1 if cost_new < cost_old else np.exp((cost_old - cost_new) / (temp))
     return a
+
 
 def find_random(graph, num_buses, size_bus):
     nodes = graph.nodes()
@@ -176,14 +140,14 @@ def find_random(graph, num_buses, size_bus):
     return rand_sol, num_nodes
 
 
-def anneal(pos_current, r, num_buses, size_bus, num_people, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100, audit=False):
+def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100, audit=False):
     cost_old = cost(pos_current, r, constraints)
 
     audit_trail = []
 
     while temp > temp_min:
         for i in range(0, n_iter):
-            pos_new = take_step(pos_current, num_buses, size_bus, num_people)
+            pos_new = take_step(pos_current, num_buses, size_bus)
             cost_new = cost(pos_new, r, constraints)
             print(cost_new)
             p_accept = prob_accept(cost_old, cost_new, temp)
@@ -220,13 +184,15 @@ def main():
             graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
             solution = solve(graph, num_buses, size_bus, constraints)
             output_file = open(output_category_path + "/" + input_name + ".out", "w")
-            arr = solution[0]
-            for i in range(len(arr)):
-                print(arr[i])
+            buses = solution[0]
+            count = 0
+            for i in range(len(buses)):
+                count += len(count_ones(buses[i].tolist()[0]))
+            print("Total Num People After: " + str(count))
             #TODO: modify this to write your solution to your 
             #      file properly as it might not be correct to 
             #      just write the variable solution to a file
-            output_file.write(solution)
+            #output_file.write(solution)
             output_file.close()
 
 if __name__ == '__main__':
