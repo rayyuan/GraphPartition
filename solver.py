@@ -51,21 +51,25 @@ def solve(graph, num_buses, size_bus, constraints):
     random_solution = find_random(graph, num_buses, size_bus)
     for bus in random_solution:
         for person in bus:
-            print(person + " ")
+            print(person + " ", end="")
+        print()
     return
 
 
 def find_random(graph, num_buses, size_bus):
     nodes = graph.nodes()
-    shuffle(nodes)
+    node_list = []
+    for n in nodes:
+        node_list.append(n)
+    shuffle(node_list)
     rand_sol = []
-    num_nodes = len(nodes)
+    num_nodes = len(node_list)
     for i in range(num_buses):
         start = i * size_bus
         end = (i+1) * size_bus
         if end >= num_nodes:
             break
-        rand_sol.append(nodes[start:end])
+        rand_sol.append(node_list[start:end])
     return rand_sol
 
 
