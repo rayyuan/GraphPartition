@@ -3,6 +3,7 @@ import os
 from random import shuffle
 import math
 import numpy as np
+import random
 
 
 ###########################################
@@ -56,7 +57,7 @@ def solve(graph, num_buses, size_bus, constraints):
 
     r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes)
 
-    print(anneal(bus_list, r, num_buses))
+    print(anneal(bus_list, r, num_buses, size_bus, num_people))
 
     return
 
@@ -65,19 +66,64 @@ def cost(s, r):
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
 
-def take_step(bus_seats,bus_count):
-    bus_from, bus_to = np.random.choice(bus_count, 2, replace=False)
-
-    bus_from_guests = np.where(bus_seats[bus_from] == 1)[1]
-    bus_to_guests = np.where(bus_seats[bus_to] == 1)[1]
-
-    bus_from_guest = np.random.choice(bus_from_guests)
-    bus_to_guest = np.random.choice(bus_to_guests)
-
-    bus_seats[bus_from, bus_from_guest] = 0
-    bus_seats[bus_from, bus_to_guest] = 1
-    bus_seats[bus_to, bus_to_guest] = 0
-    bus_seats[bus_to, bus_from_guest] = 1
+def take_step(starting_bus_seats,bus_count,size_bus,num_people):
+    bus_seats = np.matrix(starting_bus_seats, copy=True)
+    # bus_from, bus_to = np.random.choice(bus_count, 2, replace=False)
+    #
+    # bus_from_people = np.where(bus_seats[bus_from] == 1)
+    # bus_to_people = np.where(bus_seats[bus_to] == 1)
+    # people_in_bus_from = len(bus_from_people)
+    # people_in_bus_to = len(bus_to_people)
+    # bus_from_capacity = people_in_bus_from >= size_bus
+    # bus_to_capacity = people_in_bus_to >= size_bus
+    #
+    # if bus_from_capacity and not bus_to_capacity:
+    #     pos1 = np.random.choice(bus_from_people)
+    #     pos2 = random.randint(num_people)
+    # elif bus_to_capacity and not bus_from_capacity:
+    #     pos1 = random.randint(num_people)
+    #     pos2 = np.random.choice(bus_to_people)
+    # elif bus_to_capacity and bus_from_capacity:
+    #     pos1 = np.random.choice(bus_from_people)
+    #     pos2 = np.random.choice(bus_to_people)
+    # else:
+    #     pos1 = random.randint(num_people)
+    #     pos2 = random.randint(num_people)
+    #
+    # pos1_val = bus_seats[bus_from, pos1]
+    # pos2_val = bus_seats[bus_to, pos2]
+    # pos3_val = bus_seats[bus_to, pos1]
+    # pos4_val = bus_seats[bus_from, pos2]
+    # if(pos1_val ==1):
+    #     bus_seats[bus_to, pos1] =1
+    #     bus_seats[bus_from, pos1] = 0
+    # if (pos1_val == 1):
+    #     bus_seats[bus_to, pos1] = 1
+    #     bus_seats[bus_from, pos1] = 0
+    #
+    # bus_seats[bus_from, pos2] =
+    # bus_seats[bus_from, pos1] =
+    # bus_seats[bus_to, pos1] =
+    # bus_seats[bus_to, pos2] =
+    bus_seats = np.matrix(starting_bus_seats, copy=True)
+    person = random.randint(num_people)
+    person_bus = 0
+    for i in range(bus_count):
+        if bus_seats[i][person] == 1:
+            person_bus = i
+            break
+    if bus_count == 1:
+        return bus_seats
+    switch_bus = person_bus
+    while switch_bus == person_bus:
+        switch_bus = random.randint(bus_count)
+    bus_seats[bus, person] = 0
+    bus_seats[switch_bus, person] = 1
+    people_in_switch = np.where(bus_seats[switch_bus] == 1)
+    if len(people_in_switch) > size_bus:
+        rand_person = np.random.choice(people_in_switch)
+        bus_seats[bus, rand_person] = 1
+        bus_seats[switch_bus, rand_person] = 0
     return bus_seats
 
 def prob_accept(cost_old, cost_new, temp):
@@ -101,14 +147,14 @@ def find_random(graph, num_buses, size_bus):
     return rand_sol, num_nodes
 
 
-def anneal(pos_current, r, num_buses, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100, audit=False):
+def anneal(pos_current, r, num_buses, size_bus, num_people, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100, audit=False):
     cost_old = cost(pos_current, r)
 
     audit_trail = []
 
     while temp > temp_min:
         for i in range(0, n_iter):
-            pos_new = take_step(pos_current, num_buses)
+            pos_new = take_step(pos_current, num_buses, size_bus, num_people)
             cost_new = cost(pos_new, r)
             p_accept = prob_accept(cost_old, cost_new, temp)
             if p_accept > np.random.random():
