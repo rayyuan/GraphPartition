@@ -64,6 +64,9 @@ def cost(s, r):
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
 
+def prob_accept(cost_old, cost_new, temp):
+    a = 1 if cost_new < cost_old else np.exp((cost_old - cost_new) / temp)
+    return a
 
 def find_random(graph, num_buses, size_bus):
     nodes = graph.nodes()
