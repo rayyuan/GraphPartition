@@ -10,7 +10,7 @@ import numpy as np
 # the folder containing all three input
 # size category folders
 ###########################################
-path_to_inputs = "../deliverable1/inputs"
+path_to_inputs = "./deliverable1/inputs"
 
 ###########################################
 # Change this variable if you want
@@ -67,19 +67,6 @@ def find_random(graph, num_buses, size_bus):
             break
         rand_sol.append(nodes[start:end])
     return rand_sol
-
-
-#
-# def find_random(graph, num_buses, size_bus, constraints):
-#     nodes = graph.nodes_iter()
-#     buses = []
-#     for i in range(num_buses):
-#         buses.append([])
-#
-# def checkBus(bus, size, rowdyGroups, toAdd):
-#     return len(bus) <= size and not containsRowdy(bus, rowdyGroups, toAdd)
-#
-# def containsRowdy(bus, rowdyGroups, toAdd):
 
 
 
