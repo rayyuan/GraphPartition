@@ -64,6 +64,21 @@ def cost(s, r):
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
 
+def take_step(bus_seats,bus_count):
+    bus_from, bus_to = np.random.choice(bus_count, 2, replace=False)
+
+    bus_from_guests = np.where(bus_seats[bus_from] == 1)[1]
+    bus_to_guests = np.where(bus_seats[bus_to] == 1)[1]
+
+    bus_from_guest = np.random.choice(bus_from_guests)
+    bus_to_guest = np.random.choice(bus_to_guests)
+
+    bus_seats[bus_from, bus_from_guest] = 0
+    bus_seats[bus_from, bus_to_guest] = 1
+    bus_seats[bus_to, bus_to_guest] = 0
+    bus_seats[bus_to, bus_from_guest] = 1
+    return bus_seats
+
 def prob_accept(cost_old, cost_new, temp):
     a = 1 if cost_new < cost_old else np.exp((cost_old - cost_new) / temp)
     return a
