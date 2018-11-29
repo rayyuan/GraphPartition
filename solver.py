@@ -106,6 +106,11 @@ def main():
 
             output_file.close()
 
+def cost(s, r):
+    bus_costs = s * r * s.T
+    total_bus_cost = np.trace(bus_costs)
+    return total_bus_cost
+
 if __name__ == '__main__':
     main()
 
