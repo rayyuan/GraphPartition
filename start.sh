@@ -10,7 +10,7 @@ python3 solver.py 31 6 &
 python3 solver.py 31 7 &
 python3 solver.py 31 8 &
 python3 solver.py 31 9 &
-python3 solver.py 31 10 &
+python3 solver.py 32 10 &
 python3 solver.py 31 11 &
 python3 solver.py 31 12 &
 python3 solver.py 31 13 &
@@ -31,3 +31,4 @@ python3 solver.py 31 27 &
 python3 solver.py 31 28 &
 python3 solver.py 31 29 &
 python3 solver.py 31 30 &
+python3 solver.py 32 31 &
