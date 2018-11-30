@@ -208,7 +208,7 @@ def find_random(graph, num_buses, size_bus):
     return rand_sol, num_nodes, max_degree
 
 
-def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.93, n_iter=400):
+def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=200):
     cost_old = cost(pos_current, r, constraints)
     while temp > temp_min:
         for i in range(0, n_iter):
