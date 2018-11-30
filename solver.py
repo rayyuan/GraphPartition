@@ -245,8 +245,8 @@ def main():
 
         for input_folder in os.listdir(category_dir):
             input_name = os.fsdecode(input_folder)
-            print("Solving: ", input_name)
             if int(input_name) % int(sys.argv[1]) == int(sys.argv[2]):
+                print("Solving: ", input_name)
                 graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
                 solution = solve(graph, num_buses, size_bus, constraints)
                 output_file = open(output_category_path + "/" + input_name + ".out", "w")
