@@ -1,6 +1,6 @@
 import networkx as nx
 import os
-import numpy as np
+import cupy as np
 import random
 
 
