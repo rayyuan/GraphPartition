@@ -1,6 +1,5 @@
 import networkx as nx
 import os
-from random import shuffle
 import numpy as np
 import random
 
@@ -21,6 +20,7 @@ path_to_outputs = "./outputs"
 
 label_to_id = {}
 id_to_label = {}
+passenger_count = {}
 
 def parse_input(folder_name):
     '''
@@ -84,40 +84,35 @@ def check_row(row, constraints):
     return permissible
 
 
-def take_step(starting_bus_seats,bus_count,size_bus):
-
+def take_step(starting_bus_seats, bus_count, size_bus):
     bus_seats = np.matrix(starting_bus_seats, copy=True)
+    if bus_count == 1:
+        return bus_seats
 
     people = []
     person_bus = 0
     people_in_person_bus = 0
     while people_in_person_bus < 2:
         person_bus = random.randint(0, bus_count-1)
-        people = count_ones(bus_seats[person_bus].tolist()[0])
+        people = np.where(bus_seats[person_bus] == 1)[1]
         people_in_person_bus = len(people)
+
     person = np.random.choice(people)
 
-    if bus_count == 1:
-        return bus_seats
+
     switch_bus = person_bus
     while switch_bus == person_bus:
         switch_bus = random.randint(0, bus_count-1)
+
     bus_seats[person_bus, person] = 0
     bus_seats[switch_bus, person] = 1
-    people_in_switch = count_ones(bus_seats[switch_bus].tolist()[0])
-    if len(people_in_switch) >= size_bus:
+    people_in_switch = np.where(bus_seats[switch_bus] == 1)[1]
+
+    if len(people_in_switch) > size_bus:
         rand_person = np.random.choice(people_in_switch)
         bus_seats[person_bus, rand_person] = 1
         bus_seats[switch_bus, rand_person] = 0
     return bus_seats
-
-
-def count_ones(bus):
-    ones = []
-    for i in range(len(bus)):
-        if bus[i] == 1:
-            ones.append(i)
-    return ones
 
 
 def prob_accept(cost_old, cost_new, temp):
@@ -135,30 +130,51 @@ def find_random(graph, num_buses, size_bus):
         label_to_id[n] = i
         i += 1
 
-    shuffle(node_list)
+    #shuffle(node_list)
     rand_sol = []
-
+    num_nodes = len(node_list)
     for i in range(num_buses):
-        # start = i * size_bus
-        # end = (i+1) * size_bus
-        # if end > num_nodes:
-        #     break
-        # rand_sol.append(node_list[start:end])
+        start = i * size_bus
+        end = (i+1) * size_bus
+        if end > num_nodes:
+            break
+        rand_sol.append(node_list[start:end])
+
+    while len(rand_sol) < num_buses:
         rand_sol.append([])
 
-    num_nodes = len(node_list)
-    bus = 0
-    for i in range(num_nodes):
-        rand_sol[bus % num_buses].append(node_list[i])
-        bus += 1
+
+    # for i in range(num_nodes):
+    #     rand_bus_index = random.randint(0, num_buses-1)
+    #     rand_bus = rand_sol[rand_bus_index]
+    #     while len(rand_bus) >= size_bus:
+    #         rand_bus_index = random.randint(0, num_buses - 1)
+    #         rand_bus = rand_sol[rand_bus_index]
+    #     rand_bus.append(node_list[i])
+    print(rand_sol)
+    print(num_buses)
+    empty_buses = []
+    for i in range(num_buses):
+        if len(rand_sol[i]) == 0:
+            empty_buses.append(i)
+
+    i = 0
+    for x in range(len(empty_buses)):
+        bus = rand_sol[empty_buses[x]]
+        bus_to_take_from = rand_sol[i]
+        while len(bus_to_take_from) < 2:
+            i -= 1
+            bus_to_take_from = rand_sol[i]
+        bus.append(bus_to_take_from.pop(len(bus_to_take_from)-1))
+        i += 1
+
+    print(rand_sol)
 
     return rand_sol, num_nodes
 
 
-def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100, audit=False):
+def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
     cost_old = cost(pos_current, r, constraints)
-
-    audit_trail = []
 
     while temp > temp_min:
         for i in range(0, n_iter):
@@ -169,11 +185,9 @@ def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=
             if p_accept > np.random.random():
                 pos_current = pos_new
                 cost_old = cost_new
-            if audit:
-                audit_trail.append((cost_new, cost_old, temp, p_accept))
         temp *= alpha
 
-    return pos_current, cost_old, audit_trail
+    return pos_current, cost_old
 
 def main():
     '''
@@ -182,7 +196,7 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
-    size_categories = ["medium", "medium", "large"]
+    size_categories = ["small", "medium", "large"]
     if not os.path.isdir(path_to_outputs):
         os.mkdir(path_to_outputs)
 
@@ -220,12 +234,15 @@ def convert_to_labels(buses):
     labels = []
     for i in range(len(buses)):
         print("SHAPE:" + str(buses.shape))
-        bus = buses[i,:].tolist()[0]
+        bus = buses[i]
         if type(bus) is float:
+            #bus = buses[i, :].tolist()
             print(buses)
             print(buses[i,:])
             print(buses[i,:].tolist())
+            print(type(buses[i,:].tolist()))
             print(buses[i,:].tolist()[0])
+        print("BUSLIST:",bus)
         print(len(bus))
 
 
