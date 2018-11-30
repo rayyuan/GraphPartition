@@ -91,7 +91,7 @@ def take_step(starting_bus_seats,bus_count,size_bus):
     people = []
     person_bus = 0
     people_in_person_bus = 0
-    while people_in_person_bus is 0:
+    while people_in_person_bus < 2:
         person_bus = random.randint(0, bus_count-1)
         people = count_ones(bus_seats[person_bus].tolist()[0])
         people_in_person_bus = len(people)
@@ -126,11 +126,10 @@ def prob_accept(cost_old, cost_new, temp):
 
 
 def find_random(graph, num_buses, size_bus):
-    nodes = graph.nodes()
     node_list = []
     i = 0
 
-    for n in nodes:
+    for n in graph.nodes():
         node_list.append(i)
         id_to_label[i] = n
         label_to_id[n] = i
@@ -138,13 +137,21 @@ def find_random(graph, num_buses, size_bus):
 
     shuffle(node_list)
     rand_sol = []
-    num_nodes = len(node_list)
+
     for i in range(num_buses):
-        start = i * size_bus
-        end = (i+1) * size_bus
-        if end > num_nodes:
-            break
-        rand_sol.append(node_list[start:end])
+        # start = i * size_bus
+        # end = (i+1) * size_bus
+        # if end > num_nodes:
+        #     break
+        # rand_sol.append(node_list[start:end])
+        rand_sol.append([])
+
+    num_nodes = len(node_list)
+    bus = 0
+    for i in range(num_nodes):
+        rand_sol[bus % num_buses].append(node_list[i])
+        bus += 1
+
     return rand_sol, num_nodes
 
 
@@ -175,7 +182,7 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
-    size_categories = ["small", "medium", "large"]
+    size_categories = ["medium", "medium", "large"]
     if not os.path.isdir(path_to_outputs):
         os.mkdir(path_to_outputs)
 
