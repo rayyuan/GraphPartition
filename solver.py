@@ -53,11 +53,16 @@ def parse_input(folder_name):
 def solve(graph, num_buses, size_bus, constraints):
     random_solution, num_people = find_random(graph, num_buses, size_bus)
     bus_list = np.zeros((num_buses, num_people))
+    count = 0
     for i in range(len(random_solution)):
         for person in random_solution[i]:
             bus_list.itemset((i, int(person)), 1)
+            count += 1
+
+    print("Started with: ", count, " people")
 
     r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1
+    r = r.A
 
     solution = anneal(bus_list, r, num_buses, size_bus, constraints)
 
@@ -65,11 +70,11 @@ def solve(graph, num_buses, size_bus, constraints):
 
 
 def cost(s, r, constraints):
-    s_copy = np.matrix(s, copy=True)
+    s_copy = np.array(s, copy=True)
     for i in range(len(s_copy)):
         if not check_row(s_copy[i], constraints):
             s_copy[i] = 0
-    bus_costs = s_copy * r * s_copy.T
+    bus_costs = np.dot(np.dot(s_copy, r), s_copy.T)
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
 
@@ -85,7 +90,7 @@ def check_row(row, constraints):
 
 
 def take_step(starting_bus_seats, bus_count, size_bus):
-    bus_seats = np.matrix(starting_bus_seats, copy=True)
+    bus_seats = np.array(starting_bus_seats, copy=True)
     if bus_count == 1:
         return bus_seats
 
@@ -94,7 +99,7 @@ def take_step(starting_bus_seats, bus_count, size_bus):
     people_in_person_bus = 0
     while people_in_person_bus < 2:
         person_bus = random.randint(0, bus_count-1)
-        people = np.where(bus_seats[person_bus] == 1)[1]
+        people = np.where(bus_seats[person_bus] == 1)[0]
         people_in_person_bus = len(people)
 
     person = np.random.choice(people)
@@ -106,7 +111,7 @@ def take_step(starting_bus_seats, bus_count, size_bus):
 
     bus_seats[person_bus, person] = 0
     bus_seats[switch_bus, person] = 1
-    people_in_switch = np.where(bus_seats[switch_bus] == 1)[1]
+    people_in_switch = np.where(bus_seats[switch_bus] == 1)[0]
 
     if len(people_in_switch) > size_bus:
         rand_person = np.random.choice(people_in_switch)
@@ -130,7 +135,6 @@ def find_random(graph, num_buses, size_bus):
         label_to_id[n] = i
         i += 1
 
-    #shuffle(node_list)
     rand_sol = []
     num_nodes = len(node_list)
     for i in range(num_buses):
@@ -151,8 +155,7 @@ def find_random(graph, num_buses, size_bus):
     #         rand_bus_index = random.randint(0, num_buses - 1)
     #         rand_bus = rand_sol[rand_bus_index]
     #     rand_bus.append(node_list[i])
-    print(rand_sol)
-    print(num_buses)
+
     empty_buses = []
     for i in range(num_buses):
         if len(rand_sol[i]) == 0:
@@ -168,7 +171,6 @@ def find_random(graph, num_buses, size_bus):
         bus.append(bus_to_take_from.pop(len(bus_to_take_from)-1))
         i += 1
 
-    print(rand_sol)
 
     return rand_sol, num_nodes
 
@@ -180,7 +182,7 @@ def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=
         for i in range(0, n_iter):
             pos_new = take_step(pos_current, num_buses, size_bus)
             cost_new = cost(pos_new, r, constraints)
-            print(cost_new)
+            #print(cost_new)
             p_accept = prob_accept(cost_old, cost_new, temp)
             if p_accept > np.random.random():
                 pos_current = pos_new
@@ -214,19 +216,12 @@ def main():
             solution = solve(graph, num_buses, size_bus, constraints)
             output_file = open(output_category_path + "/" + input_name + ".out", "w")
             buses = solution[0]
-            print(solution)
-            print(type(solution))
-            print(buses)
-            print(type(buses))
-            #print(solution)
-            #count = 0
-            # for i in range(len(buses)):
-            #     people = len(count_ones(buses[i].tolist()[0]))
-            #     count += people
-            #     print("Bus " + str(i) + " has " + str(people) + " people.")
-            #print("Total Num People After: " + str(count))
-            #print(label_to_id)
-            #print(id_to_label)
+            count = 0
+            for i in range(len(buses)):
+                people = len(np.where(buses[i] == 1)[0])
+                count += people
+                #print("Bus " + str(i) + " has " + str(people) + " people.")
+            print("Total Num People After: " + str(count))
             labels = convert_to_labels(buses)
 
             for i in range(len(labels)):
@@ -236,28 +231,16 @@ def main():
 
 def convert_to_labels(buses):
     labels = []
+    count = 0
     for i in range(len(buses)):
-        print("SHAPE:" + str(buses.shape))
         bus = buses[i]
-        if type(bus) is float:
-            #bus = buses[i, :].tolist()
-            print(buses)
-            print(buses[i,:])
-            print(buses[i,:].tolist())
-            print(type(buses[i,:].tolist()))
-            print(buses[i,:].tolist()[0])
-        print("BUSLIST:",bus)
-        print(type(bus))
-        print(bus[0])
-        print(type(bus[0]))
-        print(len(bus))
-
-
         bus_labels = []
         for x in range(len(bus)):
             if bus[x] == 1:
                 bus_labels.append(id_to_label[x])
         labels.append(bus_labels)
+        count += len(bus_labels)
+    print("added: ", count, "people.")
     return labels
 
 def write_list(f, list):
