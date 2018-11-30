@@ -10,7 +10,7 @@ import random
 # the folder containing all three input
 # size category folders
 ###########################################
-path_to_inputs = "./deliverable1/inputs"
+path_to_inputs = "./"
 
 ###########################################
 # Change this variable if you want
@@ -18,6 +18,9 @@ path_to_inputs = "./deliverable1/inputs"
 # different folder
 ###########################################
 path_to_outputs = "./outputs"
+
+label_to_id = {}
+id_to_label = {}
 
 def parse_input(folder_name):
     '''
@@ -125,8 +128,14 @@ def prob_accept(cost_old, cost_new, temp):
 def find_random(graph, num_buses, size_bus):
     nodes = graph.nodes()
     node_list = []
+    i = 0
+
     for n in nodes:
-        node_list.append(n)
+        node_list.append(i)
+        id_to_label[i] = n
+        label_to_id[n] = i
+        i += 1
+
     shuffle(node_list)
     rand_sol = []
     num_nodes = len(node_list)
@@ -166,7 +175,7 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
-    size_categories = ["medium", "medium", "large"]
+    size_categories = ["small", "medium", "large"]
     if not os.path.isdir(path_to_outputs):
         os.mkdir(path_to_outputs)
 
@@ -184,17 +193,53 @@ def main():
             solution = solve(graph, num_buses, size_bus, constraints)
             output_file = open(output_category_path + "/" + input_name + ".out", "w")
             buses = solution[0]
-            count = 0
-            for i in range(len(buses)):
-                people = len(count_ones(buses[i].tolist()[0]))
-                count += people
-                print("Bus " + str(i) + " has " + str(people) + " people.")
-            print("Total Num People After: " + str(count))
-            #TODO: modify this to write your solution to your 
-            #      file properly as it might not be correct to 
-            #      just write the variable solution to a file
-            #output_file.write(solution)
+            #print(solution)
+            #count = 0
+            # for i in range(len(buses)):
+            #     people = len(count_ones(buses[i].tolist()[0]))
+            #     count += people
+            #     print("Bus " + str(i) + " has " + str(people) + " people.")
+            #print("Total Num People After: " + str(count))
+            #print(label_to_id)
+            #print(id_to_label)
+            labels = convert_to_labels(buses)
+
+            for i in range(len(labels)):
+                bus = labels[i]
+                write_list(output_file, bus)
             output_file.close()
+
+def convert_to_labels(buses):
+    labels = []
+    for i in range(len(buses)):
+        print("SHAPE:" + str(buses.shape))
+        bus = buses[i,:].tolist()[0]
+        if type(bus) is float:
+            print(buses)
+            print(buses[i,:])
+            print(buses[i,:].tolist())
+            print(buses[i,:].tolist()[0])
+        print(len(bus))
+
+
+        bus_labels = []
+        for x in range(len(bus)):
+            if bus[x] == 1:
+                bus_labels.append(id_to_label[x])
+        labels.append(bus_labels)
+    return labels
+
+def write_list(f, list):
+    if len(list) is 0:
+        return
+    f.write("[")
+    for i in range(len(list)):
+        f.write("'")
+        f.write(str(list[i]))
+        f.write("'")
+        if i is not len(list) - 1:
+            f.write(", ")
+    f.write("]\n")
 
 if __name__ == '__main__':
     main()
