@@ -68,7 +68,7 @@ def solve(graph, num_buses, size_bus, constraints):
             bus_list.itemset((i, int(person)), 1)
             count += 1
 
-    print("Started with: ", count, " people")
+    # print("Started with: ", count, " people")
 
     node_list = []
     node_list_degrees = []
@@ -218,7 +218,7 @@ def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=
             if p_accept > np.random.random():
                 pos_current = pos_new
                 cost_old = cost_new
-        print(cost_new, temp, temp_min)
+        # print(cost_new, temp, temp_min)
         temp *= alpha
 
     return pos_current, cost_old
@@ -256,7 +256,7 @@ def main():
                     people = len(np.where(buses[i] == 1)[0])
                     count += people
                     #print("Bus " + str(i) + " has " + str(people) + " people.")
-                print("Total Num People After: " + str(count))
+                # print("Total Num People After: " + str(count))
                 labels = convert_to_labels(buses)
 
                 for i in range(len(labels)):
@@ -276,7 +276,7 @@ def convert_to_labels(buses):
         labels.append(bus_labels)
         count += len(bus_labels)
     #print(labels)
-    print("added: ", count, "people.")
+    # print("added: ", count, "people.")
     return labels
 
 def write_list(f, list):
