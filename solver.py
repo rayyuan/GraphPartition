@@ -214,6 +214,10 @@ def main():
             solution = solve(graph, num_buses, size_bus, constraints)
             output_file = open(output_category_path + "/" + input_name + ".out", "w")
             buses = solution[0]
+            print(solution)
+            print(type(solution))
+            print(buses)
+            print(type(buses))
             #print(solution)
             #count = 0
             # for i in range(len(buses)):
@@ -243,6 +247,9 @@ def convert_to_labels(buses):
             print(type(buses[i,:].tolist()))
             print(buses[i,:].tolist()[0])
         print("BUSLIST:",bus)
+        print(type(bus))
+        print(bus[0])
+        print(type(bus[0]))
         print(len(bus))
 
 
