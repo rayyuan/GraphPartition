@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="few changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="automated" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +26,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="11" />
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.sh">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -124,10 +126,12 @@
         <option value="$PROJECT_DIR$/outputs/small/first.out" />
         <option value="$PROJECT_DIR$/ray/solver.py" />
         <option value="$PROJECT_DIR$/solver.py" />
+        <option value="$PROJECT_DIR$/setup.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="987" />
@@ -147,6 +151,11 @@
             <path>
               <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
+              <item name="small" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +232,7 @@
       <option name="presentableId" value="Default" />
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
-      <workItem from="1543564688266" duration="2315000" />
+      <workItem from="1543564688266" duration="3526000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -428,11 +437,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543567527556</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="automated">
+      <created>1543568758394</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1543568758394</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2856000" />
+    <option name="totallyTimeSpent" value="4067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,7 +460,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="987" extended-state="6" />
+    <frame x="-1" y="23" width="1680" height="987" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07448108" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -496,7 +512,8 @@
     <MESSAGE value="can run on multiple threads" />
     <MESSAGE value="oops" />
     <MESSAGE value="few changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="few changes" />
+    <MESSAGE value="automated" />
+    <option name="LAST_COMMIT_MESSAGE" value="automated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ray/output_scorer.py" />
@@ -719,10 +736,17 @@
     <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="11" />
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="25" />
         </state>
       </provider>
     </entry>
