@@ -49,6 +49,14 @@ def parse_input(folder_name):
 
     return graph, num_buses, size_bus, constraints
 
+def gen_starting_solution(num_buses, node_list, graph, constraints):
+    s = np.zeros((num_buses, len(node_list)))
+
+    #generate random
+    for i in range(len(node_list)):
+        s.itemset((random.randint(0, num_buses - 1), i), 1)
+
+    return s
 
 def solve(graph, num_buses, size_bus, constraints):
     random_solution, num_people = find_random(graph, num_buses, size_bus)
@@ -121,7 +129,11 @@ def take_step(starting_bus_seats, bus_count, size_bus):
 
 
 def prob_accept(cost_old, cost_new, temp):
-    a = 1 if cost_new < cost_old else np.exp((cost_old - cost_new) / (temp))
+    if cost_new < cost_old:
+        a = 1
+        print(cost_new, temp)
+    else:
+        a = np.exp((cost_old - cost_new) / temp)
     return a
 
 
@@ -138,11 +150,20 @@ def find_random(graph, num_buses, size_bus):
     rand_sol = []
     num_nodes = len(node_list)
     for i in range(num_buses):
-        start = i * size_bus
-        end = (i+1) * size_bus
-        if end > num_nodes:
-            break
-        rand_sol.append(node_list[start:end])
+    #     start = i * size_bus
+    #     end = (i+1) * size_bus
+    #     if end > num_nodes:
+    #         break
+    #     rand_sol.append(node_list[start:end+1])
+        rand_sol.append([])
+
+    for i in range(num_nodes):
+        rand_bus_index = random.randint(0, num_buses-1)
+        rand_bus = rand_sol[rand_bus_index]
+        while len(rand_bus) >= size_bus:
+            rand_bus_index = random.randint(0, num_buses - 1)
+            rand_bus = rand_sol[rand_bus_index]
+        rand_bus.append(node_list[i])
 
     while len(rand_sol) < num_buses:
         rand_sol.append([])
@@ -171,22 +192,20 @@ def find_random(graph, num_buses, size_bus):
         bus.append(bus_to_take_from.pop(len(bus_to_take_from)-1))
         i += 1
 
-
     return rand_sol, num_nodes
 
 
-def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
+def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.93, n_iter=400):
     cost_old = cost(pos_current, r, constraints)
-
     while temp > temp_min:
         for i in range(0, n_iter):
             pos_new = take_step(pos_current, num_buses, size_bus)
             cost_new = cost(pos_new, r, constraints)
-            #print(cost_new)
             p_accept = prob_accept(cost_old, cost_new, temp)
             if p_accept > np.random.random():
                 pos_current = pos_new
                 cost_old = cost_new
+                #print(cost_new, temp, temp_min)
         temp *= alpha
 
     return pos_current, cost_old
@@ -198,7 +217,7 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
-    size_categories = ["small", "medium", "large"]
+    size_categories = ["medium", "medium", "large"]
     if not os.path.isdir(path_to_outputs):
         os.mkdir(path_to_outputs)
 
@@ -240,6 +259,7 @@ def convert_to_labels(buses):
                 bus_labels.append(id_to_label[x])
         labels.append(bus_labels)
         count += len(bus_labels)
+    #print(labels)
     print("added: ", count, "people.")
     return labels
 
