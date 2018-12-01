@@ -60,7 +60,63 @@ def main():
     if sys.argv[1] == "--file":
         graph, num_buses, size_bus, constraints = parse_input(sys.argv[2])
         solution = solve(graph, num_buses, size_bus, constraints)
-        print(solution)
+        labels = convert_to_labels(solution[0])
+        output_file = open("outputs/" + sys.argv[2] + ".out", "w")
+
+        for i in range(len(labels)):
+            bus = labels[i]
+            write_list(output_file, bus)
+        output_file.close()
+    else:
+        log_file = open("outputs/runtime.log", "w")
+        size_categories = ["small", "medium", "large"]
+        if not os.path.isdir(path_to_outputs):
+            os.mkdir(path_to_outputs)
+
+        for size in size_categories:
+            category_path = path_to_inputs + "/" + size
+            output_category_path = path_to_outputs + "/" + size
+            category_dir = os.fsencode(category_path)
+
+            if not os.path.isdir(output_category_path):
+                os.mkdir(output_category_path)
+
+            for input_folder in os.listdir(category_dir):
+                input_name = os.fsdecode(input_folder)
+                if int(input_name) % int(sys.argv[1]) == int(sys.argv[2]):
+                    print("Thread: ", sys.argv[2], "--", size, input_name)
+                    log_file = open("outputs/runtime.log", "a")
+                    log_file.write("Thread: ")
+                    log_file.write(sys.argv[2])
+                    log_file.write(" -- ")
+                    log_file.write(size)
+                    log_file.write(" ")
+                    log_file.write(input_name)
+                    log_file.write("\n")
+                    log_file.close()
+
+                    graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
+                    solution = solve(graph, num_buses, size_bus, constraints)
+                    labels = convert_to_labels(solution[0])
+                    output_file = open(output_category_path + "/" + input_name + ".out", "w")
+
+                    for i in range(len(labels)):
+                        bus = labels[i]
+                        write_list(output_file, bus)
+                    output_file.close()
+
+
+def write_list(f, list):
+    if len(list) is 0:
+        return
+    f.write("[")
+    for i in range(len(list)):
+        f.write("'")
+        f.write(str(list[i]))
+        f.write("'")
+        if i is not len(list) - 1:
+            f.write(", ")
+    f.write("]\n")
 
 
 def solve(graph, num_buses, size_bus, constraints):
@@ -93,19 +149,19 @@ def gen_starting_solution(num_buses, node_list, graph, constraints):
 
     return s
 
-def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
+def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=50):
     cost_old = cost(s, r, constraints)
 
     while temp > temp_min:
         for i in range(0, n_iter):
             # print(s.sum(axis=1), i, cost_old)
-            print("cost: ", cost_old)
             s_new = take_step(s, size_bus) # here
             cost_new = cost(s_new, r, constraints)
             p_accept = prob_accept(cost_old, cost_new, temp)
             if p_accept > np.random.random():
                 s = s_new
                 cost_old = cost_new
+        # print("cost: ", cost_old)
         temp *= alpha
 
     return s, cost_old

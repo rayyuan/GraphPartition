@@ -98,6 +98,49 @@ def score_output(input_folder, output_file):
 
     return score, "Valid output submitted with score: {}".format(score)
 
+def score_all():
+    size_categories = ["small", "medium", "large"]
+
+    log_file = open("outputs/score.log", "w")
+
+    for size in size_categories:
+
+        for input_folder in os.listdir(size):
+            score, msg = score_output(size + "/" + input_folder, "outputs/" + size + "/" + input_folder + ".out")
+            print(score, msg)
+            log_file = open("outputs/score.log", "a")
+            log_file.write(size + "/" + input_folder + "\t\t ------ \t\t" + str(score) + "\n")
+            log_file.close()
+            # input_name = os.fsdecode(input_folder)
+            # if int(input_name) % int(sys.argv[1]) == int(sys.argv[2]):
+            #     print("Thread: ", sys.argv[2], "--", size, input_name)
+            #     log_file = open("outputs/runtime.log", "a")
+            #     log_file.write("Thread: ")
+            #     log_file.write(sys.argv[2])
+            #     log_file.write(" -- ")
+            #     log_file.write(size)
+            #     log_file.write(" ")
+            #     log_file.write(input_name)
+            #     log_file.write("\n")
+            #     log_file.close()
+            #     graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
+            #     solution = solve(graph, num_buses, size_bus, constraints)
+            #     output_file = open(output_category_path + "/" + input_name + ".out", "w")
+            #     buses = solution[0]
+            #     count = 0
+            #     for i in range(len(buses)):
+            #         people = len(np.where(buses[i] == 1)[0])
+            #         count += people
+            #         #print("Bus " + str(i) + " has " + str(people) + " people.")
+            #     # print("Total Num People After: " + str(count))
+            #     labels = convert_to_labels(buses)
+            #
+            #     for i in range(len(labels)):
+            #         bus = labels[i]
+            #         write_list(output_file, bus)
+            #     output_file.close()
+
 if __name__ == '__main__':
-    score, msg = score_output(sys.argv[1], sys.argv[2])
-    print(msg)
+    # score, msg = score_output(sys.argv[1], sys.argv[2])
+    # print(msg)
+    score_all()
