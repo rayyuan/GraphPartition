@@ -68,7 +68,7 @@ def main():
             write_list(output_file, bus)
         output_file.close()
     else:
-        log_file = open("outputs/runtime.log", "w")
+        # log_file = open("outputs/runtime.log", "w")
         size_categories = ["small", "medium", "large"]
         if not os.path.isdir(path_to_outputs):
             os.mkdir(path_to_outputs)
