@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="printing debug info">
-      <change beforePath="$PROJECT_DIR$/output_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/output_comparator.py" afterDir="false" />
-    </list>
+    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="printing debug info" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
             <entry file="file://$PROJECT_DIR$/output_comparator.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="367">
-                  <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+                  <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
@@ -107,8 +105,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="75" column="25" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="25" />
+                <state relative-caret-position="487">
+                  <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -172,9 +170,9 @@
         <option value="$PROJECT_DIR$/start.sh" />
         <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/start_rewrite.sh" />
-        <option value="$PROJECT_DIR$/solver_rewrite.py" />
         <option value="$PROJECT_DIR$/output_scorer.py" />
         <option value="$PROJECT_DIR$/output_comparator.py" />
+        <option value="$PROJECT_DIR$/solver_rewrite.py" />
       </list>
     </option>
   </component>
@@ -300,7 +298,7 @@
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
-      <workItem from="1543639669099" duration="14683000" />
+      <workItem from="1543639669099" duration="14995000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -551,7 +549,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20187000" />
+    <option name="totallyTimeSpent" value="20499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,16 +855,6 @@
     <entry file="file://$PROJECT_DIR$/comparison_results.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -880,9 +868,19 @@
     <entry file="file://$PROJECT_DIR$/output_comparator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
-          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+          <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="42" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

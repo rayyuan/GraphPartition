@@ -1,0 +1,34 @@
+#!/bin/bash
+
+python3 solver_rewrite.py 32 0 &
+python3 solver_rewrite.py 32 1 &
+python3 solver_rewrite.py 32 2 &
+python3 solver_rewrite.py 32 3 &
+python3 solver_rewrite.py 32 4 &
+python3 solver_rewrite.py 32 5 &
+python3 solver_rewrite.py 32 6 &
+python3 solver_rewrite.py 32 7 &
+python3 solver_rewrite.py 32 8 &
+python3 solver_rewrite.py 32 9 &
+python3 solver_rewrite.py 32 10 &
+python3 solver_rewrite.py 32 11 &
+python3 solver_rewrite.py 32 12 &
+python3 solver_rewrite.py 32 13 &
+python3 solver_rewrite.py 32 14 &
+python3 solver_rewrite.py 32 15 &
+python3 solver_rewrite.py 32 16 &
+python3 solver_rewrite.py 32 17 &
+python3 solver_rewrite.py 32 18 &
+python3 solver_rewrite.py 32 19 &
+python3 solver_rewrite.py 32 20 &
+python3 solver_rewrite.py 32 21 &
+python3 solver_rewrite.py 32 22 &
+python3 solver_rewrite.py 32 23 &
+python3 solver_rewrite.py 32 24 &
+python3 solver_rewrite.py 32 25 &
+python3 solver_rewrite.py 32 26 &
+python3 solver_rewrite.py 32 27 &
+python3 solver_rewrite.py 32 28 &
+python3 solver_rewrite.py 32 29 &
+python3 solver_rewrite.py 32 30 &
+python3 solver_rewrite.py 32 31 &
