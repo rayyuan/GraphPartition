@@ -60,6 +60,7 @@ def gen_starting_solution(num_buses, node_list, graph, constraints):
     return s
 
 def solve(graph, num_buses, size_bus, constraints):
+    print(len(graph.nodes))
     random_solution, num_people, max_degree = find_random(graph, num_buses, size_bus)
     bus_list = np.zeros((num_buses, num_people))
     count = 0
@@ -114,6 +115,9 @@ def check_row(row, constraints):
 
 def take_step(starting_bus_seats, bus_count, size_bus):
     bus_seats = np.array(starting_bus_seats, copy=True)
+
+    print(np.sum(starting_bus_seats))
+
     if bus_count == 1:
         return bus_seats
 
@@ -121,6 +125,7 @@ def take_step(starting_bus_seats, bus_count, size_bus):
     person_bus = 0
     people_in_person_bus = 0
     while people_in_person_bus < 2:
+        print('fsdlaikfj;lka')
         person_bus = random.randint(0, bus_count-1)
         people = np.where(bus_seats[person_bus] == 1)[0]
         people_in_person_bus = len(people)
@@ -130,6 +135,7 @@ def take_step(starting_bus_seats, bus_count, size_bus):
 
     switch_bus = person_bus
     while switch_bus == person_bus:
+        print(';lsdlkf')
         switch_bus = random.randint(0, bus_count-1)
 
     bus_seats[person_bus, person] = 0
@@ -211,10 +217,15 @@ def find_random(graph, num_buses, size_bus):
 def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=200):
     cost_old = cost(pos_current, r, constraints)
     while temp > temp_min:
+        print('now running')
         for i in range(0, n_iter):
+            print('iteration: ', i)
             pos_new = take_step(pos_current, num_buses, size_bus)
+            print('got here 1')
             cost_new = cost(pos_new, r, constraints)
+            print('got here 2')
             p_accept = prob_accept(cost_old, cost_new, temp)
+            print('got here 3')
             if p_accept > np.random.random():
                 pos_current = pos_new
                 cost_old = cost_new

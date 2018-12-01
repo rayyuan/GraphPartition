@@ -2,6 +2,9 @@ import networkx as nx
 import os
 import numpy as np
 import random
+import sys
+
+np.set_printoptions(threshold=np.nan)
 
 ###########################################
 # Change this variable to the path to
@@ -47,23 +50,39 @@ def parse_input(folder_name):
 
     return graph, num_buses, size_bus, constraints
 
+def main():
+    '''
+        Main method which iterates over all inputs and calls `solve` on each.
+        The student should modify `solve` to return their solution and modify
+        the portion which writes it to a file to make sure their output is
+        formatted correctly.
+    '''
+    if sys.argv[1] == "--file":
+        graph, num_buses, size_bus, constraints = parse_input(sys.argv[2])
+        solution = solve(graph, num_buses, size_bus, constraints)
+        print(solution)
+
 
 def solve(graph, num_buses, size_bus, constraints):
     # TODO: Write this method as you like. We'd recommend changing the arguments here as well
 
+    # generate list of nodes
     node_list = []
     for n in graph.nodes:
         node_list.append(n)
 
+    # generate label / id mapping
     for i in range(len(node_list)):
         label_to_id[node_list[i]] = i
         id_to_label[i] = node_list[i]
 
+    # generate starting solution
     s = gen_starting_solution(num_buses, node_list, graph, constraints)
-    r = nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1
 
-    print(s)
-    print(r)
+    # generate relationship matrix
+    r = (nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1).A
+
+    return anneal(s, r, size_bus, constraints)
 
 def gen_starting_solution(num_buses, node_list, graph, constraints):
     s = np.zeros((num_buses, len(node_list)))
@@ -74,21 +93,36 @@ def gen_starting_solution(num_buses, node_list, graph, constraints):
 
     return s
 
-def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
-    cost_old = cost(pos_current, r, constraints)
+def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
+    cost_old = cost(s, r, constraints)
 
     while temp > temp_min:
         for i in range(0, n_iter):
-            pos_new = take_step(pos_current, num_buses, size_bus)
-            cost_new = cost(pos_new, r, constraints)
-            print(cost_new)
+            print(s.sum(axis=1), i, cost_old)
+            s_new = take_step(s, size_bus) # here
+            cost_new = cost(s_new, r, constraints)
             p_accept = prob_accept(cost_old, cost_new, temp)
             if p_accept > np.random.random():
-                pos_current = pos_new
+                s = s_new
                 cost_old = cost_new
         temp *= alpha
 
-    return pos_current, cost_old
+    return s, cost_old
+
+def convert_to_labels(buses):
+    labels = []
+    count = 0
+    for i in range(len(buses)):
+        bus = buses[i]
+        bus_labels = []
+        for x in range(len(bus)):
+            if bus[x] == 1:
+                bus_labels.append(id_to_label[x])
+        labels.append(bus_labels)
+        count += len(bus_labels)
+    #print(labels)
+    # print("added: ", count, "people.")
+    return labels
 
 def cost(s, r, constraints):
     s_copy = np.matrix(s, copy=True)
@@ -109,38 +143,37 @@ def check_row(row, constraints):
             return False
     return permissible
 
+def prob_accept(cost_old, cost_new, temp):
+    if cost_new < cost_old:
+        a = 1
+        #print(cost_new, temp)
+    else:
+        a = np.exp((cost_old - cost_new) / temp)
+    return a
 
-def main():
-    '''
-        Main method which iterates over all inputs and calls `solve` on each.
-        The student should modify `solve` to return their solution and modify
-        the portion which writes it to a file to make sure their output is
-        formatted correctly.
-    '''
-    size_categories = ["small", "medium", "large"]
-    if not os.path.isdir(path_to_outputs):
-        os.mkdir(path_to_outputs)
+def take_step(s, size_bus):
+    s_copy = np.array(s, copy=True)
 
-    for size in size_categories:
-        category_path = path_to_inputs + "/" + size
-        output_category_path = path_to_outputs + "/" + size
-        category_dir = os.fsencode(category_path)
+    if(s_copy.shape[0] == 1):
+        return s_copy
 
-        if not os.path.isdir(output_category_path):
-            os.mkdir(output_category_path)
+    person_to_swap = random.randint(0, s_copy.shape[1] - 1)
+    for i in range(s_copy.shape[0]):
+        if s_copy[i, person_to_swap] == 1:
+            from_row = i
+            s_copy.itemset((i, person_to_swap), 0)
+    to_row = random.randint(0, s_copy.shape[0] - 1)
+    s_copy.itemset((to_row, person_to_swap), 1)
 
-        for input_folder in os.listdir(category_dir):
-            input_name = os.fsdecode(input_folder)
-            graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
-            solution = solve(graph, num_buses, size_bus, constraints)
-            output_file = open(output_category_path + "/" + input_name + ".out", "w")
+    if np.sum(s_copy[to_row, :]) > size_bus or random.randint(0, 2) == 0:
+        other_person_to_swap = np.where(s_copy[to_row, :] == 1)[0]
+        other_person_to_swap = other_person_to_swap[random.randint(0, len(other_person_to_swap) - 1)]
+        s_copy[to_row, other_person_to_swap] = 0
+        s_copy[from_row, other_person_to_swap] = 1
 
-            # TODO: modify this to write your solution to your
-            #      file properly as it might not be correct to
-            #      just write the variable solution to a file
-            output_file.write(solution)
+    return s_copy
 
-            output_file.close()
+
 
 
 if __name__ == '__main__':
