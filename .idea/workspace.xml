@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="trying less threads">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/runtime.log" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/runtime.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solver.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="305">
@@ -28,6 +26,16 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/large/1009/graph.gml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/large/1009/parameters.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -167,6 +175,12 @@
             <path>
               <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
+              <item name="large" type="462c0819:PsiDirectoryNode" />
+              <item name="1009" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,7 +266,7 @@
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
-      <workItem from="1543639669099" duration="1021000" />
+      <workItem from="1543639669099" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -496,7 +510,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6525000" />
+    <option name="totallyTimeSpent" value="6930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,8 +580,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="trying less threads" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ray/output_scorer.py" />
-    <entry file="file://$PROJECT_DIR$/deliverable1/inputs/small/demofile.txt" />
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/small/graph.gml" />
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/medium/graph.gml" />
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/small/parameters.txt" />
@@ -791,6 +803,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/large/1009/parameters.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/large/1009/graph.gml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>

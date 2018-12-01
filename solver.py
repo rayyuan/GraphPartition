@@ -218,7 +218,7 @@ def anneal(pos_current, r, num_buses, size_bus, constraints, temp=1.0, temp_min=
             if p_accept > np.random.random():
                 pos_current = pos_new
                 cost_old = cost_new
-        # print(cost_new, temp, temp_min)
+        print(cost_new, temp, temp_min)
         temp *= alpha
 
     return pos_current, cost_old
