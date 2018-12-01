@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="printing debug info">
-      <change afterPath="$PROJECT_DIR$/start_rewrite.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_scorer.py" beforeDir="false" afterPath="$PROJECT_DIR$/output_scorer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/runtime.log" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/runtime.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/small/135.out" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/small/135.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/small/307.out" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/small/307.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/small/61.out" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/small/61.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/small/95.out" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/small/95.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solver_rewrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver_rewrite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +19,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.39623466">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/solver.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="556">
@@ -52,7 +44,7 @@
             <entry file="file://$PROJECT_DIR$/start_rewrite.sh">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="195">
-                  <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+                  <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -61,7 +53,7 @@
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="561">
-                  <caret line="63" column="66" lean-forward="true" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
+                  <caret line="63" column="66" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -88,22 +80,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/output_scorer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="503">
-                  <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+                <state relative-caret-position="747">
+                  <caret line="103" column="45" lean-forward="true" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/outputs/score.log">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-6153" />
               </provider>
             </entry>
           </file>
@@ -119,8 +104,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="281">
-                  <caret line="164" column="21" lean-forward="true" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+                <state relative-caret-position="849">
+                  <caret line="224" column="108" selection-start-line="224" selection-start-column="108" selection-end-line="224" selection-end-column="108" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -178,8 +163,8 @@
         <option value="$PROJECT_DIR$/start.sh" />
         <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/start_rewrite.sh" />
-        <option value="$PROJECT_DIR$/solver_rewrite.py" />
         <option value="$PROJECT_DIR$/output_scorer.py" />
+        <option value="$PROJECT_DIR$/solver_rewrite.py" />
       </list>
     </option>
   </component>
@@ -217,15 +202,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/deliverable1/inputs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/deliverable1/inputs/small" />
       <recent name="$PROJECT_DIR$/deliverable1/inputs/medium" />
       <recent name="$PROJECT_DIR$/jared" />
       <recent name="$PROJECT_DIR$/kyle" />
       <recent name="$PROJECT_DIR$/ray" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/outputs" />
+      <recent name="$PROJECT_DIR$/deliverable1/inputs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,7 +290,7 @@
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
-      <workItem from="1543639669099" duration="7542000" />
+      <workItem from="1543639669099" duration="8085000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -555,7 +541,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13046000" />
+    <option name="totallyTimeSpent" value="13589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,7 +556,7 @@
     <frame x="1680" y="-390" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0929309" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0929309" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -837,16 +823,21 @@
     <entry file="file://$PROJECT_DIR$/start_rewrite.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
+    <entry file="file://$PROJECT_DIR$/outputs/score.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="63" column="66" lean-forward="true" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
+        <state relative-caret-position="-6153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_scorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="103" column="45" lean-forward="true" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,17 +852,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/score.log">
+    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+        <state relative-caret-position="849">
+          <caret line="224" column="108" selection-start-line="224" selection-start-column="108" selection-end-line="224" selection-end-column="108" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

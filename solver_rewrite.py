@@ -222,7 +222,7 @@ def take_step(s, size_bus):
     to_row = random.randint(0, s_copy.shape[0] - 1)
     s_copy.itemset((to_row, person_to_swap), 1)
 
-    if np.sum(s_copy[to_row, :]) > size_bus or random.randint(0, 2) == 0:
+    if np.sum(s_copy[to_row, :]) > size_bus or random.randint(0, 2) == 0 or np.sum(s_copy[from_row, :]) == 0:
         other_person_to_swap = np.where(s_copy[to_row, :] == 1)[0]
         other_person_to_swap = other_person_to_swap[random.randint(0, len(other_person_to_swap) - 1)]
         s_copy[to_row, other_person_to_swap] = 0
