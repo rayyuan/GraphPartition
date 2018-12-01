@@ -57,6 +57,16 @@ def main():
         the portion which writes it to a file to make sure their output is
         formatted correctly.
     '''
+
+    if not os.path.isdir("outputs/small"):
+        os.mkdir("outputs/small")
+
+    if not os.path.isdir("outputs/medium"):
+        os.mkdir("outputs/medium")
+
+    if not os.path.isdir("outputs/large"):
+        os.mkdir("outputs/large")
+
     if sys.argv[1] == "--file":
         graph, num_buses, size_bus, constraints = parse_input(sys.argv[2])
         solution = solve(graph, num_buses, size_bus, constraints)
@@ -70,8 +80,6 @@ def main():
     else:
         # log_file = open("outputs/runtime.log", "w")
         size_categories = ["small", "medium", "large"]
-        if not os.path.isdir(path_to_outputs):
-            os.mkdir(path_to_outputs)
 
         for size in size_categories:
             category_path = path_to_inputs + "/" + size

@@ -105,7 +105,8 @@ def score_all():
 
     for size in size_categories:
 
-        for input_folder in os.listdir(size):
+        for input_folder in os.listdir("outputs/" + size):
+            input_folder = input_folder[:-4]
             score, msg = score_output(size + "/" + input_folder, "outputs/" + size + "/" + input_folder + ".out")
             print(score, msg)
             log_file = open("outputs/score.log", "a")

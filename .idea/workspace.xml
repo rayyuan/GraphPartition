@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="printing debug info">
+      <change beforePath="$PROJECT_DIR$/output_scorer.py" beforeDir="false" afterPath="$PROJECT_DIR$/output_scorer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solver_rewrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver_rewrite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +20,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.39623466">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/solver.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="290" column="87" selection-start-line="290" selection-start-column="39" selection-end-line="290" selection-end-column="87" />
+                <state relative-caret-position="458">
+                  <caret line="264" selection-start-line="264" selection-end-line="265" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -53,7 +54,7 @@
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="561">
-                  <caret line="63" column="66" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
+                  <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -80,11 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/output_scorer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="747">
-                  <caret line="103" column="45" lean-forward="true" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+                <state relative-caret-position="437">
+                  <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
@@ -104,8 +105,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="849">
-                  <caret line="224" column="108" selection-start-line="224" selection-start-column="108" selection-end-line="224" selection-end-column="108" />
+                <state relative-caret-position="647">
+                  <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -163,8 +164,8 @@
         <option value="$PROJECT_DIR$/start.sh" />
         <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/start_rewrite.sh" />
-        <option value="$PROJECT_DIR$/output_scorer.py" />
         <option value="$PROJECT_DIR$/solver_rewrite.py" />
+        <option value="$PROJECT_DIR$/output_scorer.py" />
       </list>
     </option>
   </component>
@@ -290,7 +291,7 @@
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
-      <workItem from="1543639669099" duration="8085000" />
+      <workItem from="1543639669099" duration="8595000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -541,7 +542,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13589000" />
+    <option name="totallyTimeSpent" value="14099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -832,32 +833,32 @@
         <state relative-caret-position="-6153" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_scorer.py">
+    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="103" column="45" lean-forward="true" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+        <state relative-caret-position="561">
+          <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="290" column="87" selection-start-line="290" selection-start-column="39" selection-end-line="290" selection-end-column="87" />
+        <state relative-caret-position="458">
+          <caret line="264" selection-start-line="264" selection-end-line="265" selection-end-column="37" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
+    <entry file="file://$PROJECT_DIR$/output_scorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="224" column="108" selection-start-line="224" selection-start-column="108" selection-end-line="224" selection-end-column="108" />
+        <state relative-caret-position="437">
+          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
