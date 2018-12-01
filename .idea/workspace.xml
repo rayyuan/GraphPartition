@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="printing debug info">
-      <change beforePath="$PROJECT_DIR$/output_scorer.py" beforeDir="false" afterPath="$PROJECT_DIR$/output_scorer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/score.log" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/score.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/small/135.out" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/small/135.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solver_rewrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver_rewrite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +55,7 @@
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="561">
-                  <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+                  <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -81,14 +82,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/output_scorer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+                <state relative-caret-position="377">
+                  <caret line="104" selection-start-line="104" selection-end-line="104" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/outputs_3_nearly_complete/score.log">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="346">
+                  <caret line="100" column="9" selection-start-line="100" selection-end-line="100" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -105,8 +115,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="647">
-                  <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+                <state relative-caret-position="623">
+                  <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="166" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -131,11 +141,13 @@
       <find>'</find>
       <find>','</find>
       <find>cost</find>
-      <find>np.where</find>
       <find>matrix</find>
       <find>32</find>
       <find>31</find>
       <find>print</find>
+      <find>small/180</find>
+      <find>where</find>
+      <find>np.where</find>
     </findStrings>
     <replaceStrings>
       <replace>', '</replace>
@@ -164,8 +176,8 @@
         <option value="$PROJECT_DIR$/start.sh" />
         <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/start_rewrite.sh" />
-        <option value="$PROJECT_DIR$/solver_rewrite.py" />
         <option value="$PROJECT_DIR$/output_scorer.py" />
+        <option value="$PROJECT_DIR$/solver_rewrite.py" />
       </list>
     </option>
   </component>
@@ -189,6 +201,11 @@
             <path>
               <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs_3_nearly_complete" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,7 +308,7 @@
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
-      <workItem from="1543639669099" duration="8595000" />
+      <workItem from="1543639669099" duration="10664000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -542,7 +559,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14099000" />
+    <option name="totallyTimeSpent" value="16168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,7 +630,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="printing debug info" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deliverable1/inputs/large/graph.gml" />
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/medium/parameters.txt" />
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/large/parameters.txt" />
     <entry file="file:///Applications/Anaconda/anaconda/envs/cs170graphpartition/lib/python3.6/site-packages/numpy/matrixlib/defmatrix.py" />
@@ -833,16 +849,6 @@
         <state relative-caret-position="-6153" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -855,10 +861,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output_scorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+        <state relative-caret-position="377">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs_3_nearly_complete/score.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="100" column="9" selection-start-line="100" selection-end-line="100" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="166" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

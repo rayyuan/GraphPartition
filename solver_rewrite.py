@@ -58,6 +58,9 @@ def main():
         formatted correctly.
     '''
 
+    if not os.path.isdir("outputs"):
+        os.mkdir("outputs")
+
     if not os.path.isdir("outputs/small"):
         os.mkdir("outputs/small")
 
@@ -92,7 +95,6 @@ def main():
             for input_folder in os.listdir(category_dir):
                 input_name = os.fsdecode(input_folder)
                 if int(input_name) % int(sys.argv[1]) == int(sys.argv[2]):
-                    print("Thread: ", sys.argv[2], "--", size, input_name)
                     log_file = open("outputs/runtime.log", "a")
                     log_file.write("Thread: ")
                     log_file.write(sys.argv[2])
@@ -112,6 +114,8 @@ def main():
                         bus = labels[i]
                         write_list(output_file, bus)
                     output_file.close()
+
+                    print("Thread: ", sys.argv[2], "--", size, input_name, "\t\t finished with score: ", solution[1])
 
 
 def write_list(f, list):
@@ -140,24 +144,43 @@ def solve(graph, num_buses, size_bus, constraints):
         label_to_id[node_list[i]] = i
         id_to_label[i] = node_list[i]
 
-    # generate starting solution
-    s = gen_starting_solution(num_buses, node_list, graph, constraints)
-
     # generate relationship matrix
     r = (nx.to_numpy_matrix(graph.to_undirected(), nodelist=graph.nodes) * -1).A
 
+    # generate starting solution
+    # starters = []
+    # for i in range(1000):
+    #     starters.append(gen_starting_solution(num_buses, node_list, graph, constraints))
+    #
+    # scores = []
+    # for i in range(len(starters)):
+    #     scores.append(cost(starters[i], r, constraints))
+    #
+    # for i in range(0, len(starters)):
+    #     if scores[i] == min(scores):
+    #         s = starters[i]
+    #
+    # s = starters[starters.index(min(scores))]
+    s = gen_starting_solution(num_buses, node_list, size_bus)
+
+    # return s, cost(s, r, constraints)
     return anneal(s, r, size_bus, constraints)
 
-def gen_starting_solution(num_buses, node_list, graph, constraints):
+def gen_starting_solution(num_buses, node_list, size_bus):
     s = np.zeros((num_buses, len(node_list)))
 
+    for i in range(0, num_buses):
+        s.itemset((i, i), 1)
+
     #generate random
-    for i in range(len(node_list)):
-        s.itemset((random.randint(0, num_buses - 1), i), 1)
+    for i in range(num_buses, len(node_list)):
+        bus = np.where(s.sum(axis=1) < size_bus)[0]
+        bus = bus[random.randint(0, len(bus) - 1)]
+        s.itemset((int(bus), i), 1)
 
     return s
 
-def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=50):
+def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
     cost_old = cost(s, r, constraints)
 
     while temp > temp_min:
