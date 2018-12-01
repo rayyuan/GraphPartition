@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="trying less threads">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/runtime.log" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/runtime.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="234" column="42" selection-start-line="234" selection-start-column="42" selection-end-line="234" selection-end-column="42" />
+            <state relative-caret-position="305">
+              <caret line="233" column="25" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -28,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="495">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -72,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output_scorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="60">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -105,9 +107,11 @@
       <find>matrix</find>
       <find>print</find>
       <find>32</find>
+      <find>31</find>
     </findStrings>
     <replaceStrings>
       <replace>', '</replace>
+      <replace>32</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -128,17 +132,17 @@
         <option value="$PROJECT_DIR$/deliverable1/inputs/small/first/graph.gml" />
         <option value="$PROJECT_DIR$/outputs/small/first.out" />
         <option value="$PROJECT_DIR$/ray/solver.py" />
-        <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/setup.sh" />
         <option value="$PROJECT_DIR$/start.sh" />
+        <option value="$PROJECT_DIR$/solver.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="987" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="y" value="-390" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -148,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,24 +162,24 @@
             <path>
               <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
+              <item name="large" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="medium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GraphPartition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GraphPartition" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="small" type="462c0819:PsiDirectoryNode" />
+              <item name="large" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +251,8 @@
       <option name="presentableId" value="Default" />
       <updated>1541903838548</updated>
       <workItem from="1543563534861" duration="541000" />
-      <workItem from="1543564688266" duration="4110000" />
+      <workItem from="1543564688266" duration="4963000" />
+      <workItem from="1543639669099" duration="1021000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -474,11 +478,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543573005501</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="trying less threads">
+      <created>1543573740275</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1543573740275</updated>
+    </task>
+    <task id="LOCAL-00034" summary="trying less threads">
+      <created>1543573825532</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1543573825532</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4651000" />
+    <option name="totallyTimeSpent" value="6525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,9 +508,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1680" height="987" extended-state="6" />
+    <frame x="1680" y="-390" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07448108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21564734" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -504,8 +523,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4984089" weight="0.32899022" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.24731183" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.496337" visible="true" weight="0.32849163" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.503663" side_tool="true" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4960286" visible="true" weight="0.21459854" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5039714" side_tool="true" visible="true" weight="0.21459854" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" sideWeight="0.4984089" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -608,14 +627,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/small/first.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/small/first.out" />
     <entry file="file://$PROJECT_DIR$/small/10/graph.gml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -729,11 +741,25 @@
     <entry file="file://$PROJECT_DIR$/outputs/small/102.out" />
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="234" column="42" selection-start-line="234" selection-start-column="42" selection-end-line="234" selection-end-column="42" />
+        <state relative-caret-position="305">
+          <caret line="233" column="25" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -756,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output_scorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="60">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -766,20 +792,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
   </component>
 </project>

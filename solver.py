@@ -231,48 +231,66 @@ def main():
         formatted correctly.
     '''
 
-    log_file = open("outputs/runtime.log", "w")
-    size_categories = ["small", "medium", "large"]
-    if not os.path.isdir(path_to_outputs):
-        os.mkdir(path_to_outputs)
+    if sys.argv[1] == "--file":
+        graph, num_buses, size_bus, constraints = parse_input(sys.argv[2])
+        solution = solve(graph, num_buses, size_bus, constraints)
+        output_file = open("outputs/" + sys.argv[2] + ".out", "w")
+        buses = solution[0]
+        count = 0
+        for i in range(len(buses)):
+            people = len(np.where(buses[i] == 1)[0])
+            count += people
+            # print("Bus " + str(i) + " has " + str(people) + " people.")
+        # print("Total Num People After: " + str(count))
+        labels = convert_to_labels(buses)
 
-    for size in size_categories:
-        category_path = path_to_inputs + "/" + size
-        output_category_path = path_to_outputs + "/" + size
-        category_dir = os.fsencode(category_path)
+        for i in range(len(labels)):
+            bus = labels[i]
+            write_list(output_file, bus)
+        output_file.close()
+    else:
+        log_file = open("outputs/runtime.log", "w")
+        size_categories = ["small", "medium", "large"]
+        if not os.path.isdir(path_to_outputs):
+            os.mkdir(path_to_outputs)
 
-        if not os.path.isdir(output_category_path):
-            os.mkdir(output_category_path)
+        for size in size_categories:
+            category_path = path_to_inputs + "/" + size
+            output_category_path = path_to_outputs + "/" + size
+            category_dir = os.fsencode(category_path)
 
-        for input_folder in os.listdir(category_dir):
-            input_name = os.fsdecode(input_folder)
-            if int(input_name) % int(sys.argv[1]) == int(sys.argv[2]):
-                print("Thread: ", sys.argv[2], "--", size, input_name)
-                log_file = open("outputs/runtime.log", "a")
-                log_file.write("Thread: ")
-                log_file.write(sys.argv[2])
-                log_file.write(" -- ")
-                log_file.write(size)
-                log_file.write(" ")
-                log_file.write(input_name)
-                log_file.write("\n")
-                log_file.close()
-                graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
-                solution = solve(graph, num_buses, size_bus, constraints)
-                output_file = open(output_category_path + "/" + input_name + ".out", "w")
-                buses = solution[0]
-                count = 0
-                for i in range(len(buses)):
-                    people = len(np.where(buses[i] == 1)[0])
-                    count += people
-                    #print("Bus " + str(i) + " has " + str(people) + " people.")
-                # print("Total Num People After: " + str(count))
-                labels = convert_to_labels(buses)
+            if not os.path.isdir(output_category_path):
+                os.mkdir(output_category_path)
 
-                for i in range(len(labels)):
-                    bus = labels[i]
-                    write_list(output_file, bus)
-                output_file.close()
+            for input_folder in os.listdir(category_dir):
+                input_name = os.fsdecode(input_folder)
+                if int(input_name) % int(sys.argv[1]) == int(sys.argv[2]):
+                    print("Thread: ", sys.argv[2], "--", size, input_name)
+                    log_file = open("outputs/runtime.log", "a")
+                    log_file.write("Thread: ")
+                    log_file.write(sys.argv[2])
+                    log_file.write(" -- ")
+                    log_file.write(size)
+                    log_file.write(" ")
+                    log_file.write(input_name)
+                    log_file.write("\n")
+                    log_file.close()
+                    graph, num_buses, size_bus, constraints = parse_input(category_path + "/" + input_name)
+                    solution = solve(graph, num_buses, size_bus, constraints)
+                    output_file = open(output_category_path + "/" + input_name + ".out", "w")
+                    buses = solution[0]
+                    count = 0
+                    for i in range(len(buses)):
+                        people = len(np.where(buses[i] == 1)[0])
+                        count += people
+                        #print("Bus " + str(i) + " has " + str(people) + " people.")
+                    # print("Total Num People After: " + str(count))
+                    labels = convert_to_labels(buses)
+
+                    for i in range(len(labels)):
+                        bus = labels[i]
+                        write_list(output_file, bus)
+                    output_file.close()
 
 def convert_to_labels(buses):
     labels = []
