@@ -98,7 +98,8 @@ def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n
 
     while temp > temp_min:
         for i in range(0, n_iter):
-            print(s.sum(axis=1), i, cost_old)
+            # print(s.sum(axis=1), i, cost_old)
+            print("cost: ", cost_old)
             s_new = take_step(s, size_bus) # here
             cost_new = cost(s_new, r, constraints)
             p_accept = prob_accept(cost_old, cost_new, temp)
