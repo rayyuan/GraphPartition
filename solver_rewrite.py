@@ -213,13 +213,16 @@ def convert_to_labels(buses):
     return labels
 
 def cost(s, r, constraints):
-    s_copy = np.matrix(s, copy=True)
-    for i in range(len(s_copy)):
-        if not check_row(s_copy[i], constraints):
-            s_copy[i] = 0
-    bus_costs = s_copy * r * s_copy.T
+    bus_costs = np.dot(np.dot(s, r), s.T)
     total_bus_cost = np.trace(bus_costs)
     return total_bus_cost
+    # s_copy = np.matrix(s, copy=True)
+    # for i in range(len(s_copy)):
+    #     if not check_row(s_copy[i], constraints):
+    #         s_copy[i] = 0
+    # bus_costs = s_copy * r * s_copy.T
+    # total_bus_cost = np.trace(bus_costs)
+    # return total_bus_cost
 
 
 def check_row(row, constraints):
