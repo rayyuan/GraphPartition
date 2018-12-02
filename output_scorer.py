@@ -113,6 +113,6 @@ def score_all():
             log_file.close()
 
 if __name__ == '__main__':
-    # score, msg = score_output(sys.argv[1], sys.argv[2])
-    # print(msg)
-    score_all()
+    score, msg = score_output(sys.argv[1], sys.argv[2])
+    print(msg)
+    # score_all()
