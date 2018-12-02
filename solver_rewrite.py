@@ -180,7 +180,7 @@ def gen_starting_solution(num_buses, node_list, size_bus):
 
     return s
 
-def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=100):
+def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=300):
     cost_old = cost(s, r, constraints)
 
     while temp > temp_min:
