@@ -127,7 +127,9 @@ def compare(dir1, dir2):
             # print("{:<15}".format(size + " - " + input_folder) + "\t------\t" + str(score1) + "  vs  " + str(score2) + "\n")
 
             log_file = open("comparison_results.log", "a")
-            if score1 > score2 :
+            if score1 == score2:
+                log_file.write("{:<12}".format(size + " - " + input_folder) + " --- " + "{:<25}".format(str(score1)) + "  =  " + str(score2) + "\n")
+            elif score1 > score2 :
                 dir1_bigger += 1
                 log_file.write("{:<12}".format(size + " - " + input_folder) + " --- " + "{:<25}".format(str(score1)) + "  >  " + str(score2) + "\n")
             else:
