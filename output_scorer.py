@@ -98,21 +98,31 @@ def score_output(input_folder, output_file):
 
     return score, "Valid output submitted with score: {}".format(score)
 
-def score_all():
+def score_all(dir1):
     size_categories = ["small", "medium", "large"]
 
-    log_file = open("outputs/score.log", "w")
+    log_file = open(dir1 + "/score.log", "w")
+
+    total_num = 0
+    total_score = 0
 
     for size in size_categories:
 
-        for input_folder in os.listdir("outputs/" + size):
+        for input_folder in os.listdir(dir1 + "/" + size):
             input_folder = input_folder[:-4]
-            score, msg = score_output(size + "/" + input_folder, "outputs/" + size + "/" + input_folder + ".out")
-            log_file = open("outputs/score.log", "a")
+            score, msg = score_output(size + "/" + input_folder, dir1 + "/" + size + "/" + input_folder + ".out")
+            total_score += score
+            total_num += 1
+            log_file = open(dir1 + "/score.log", "a")
             log_file.write("{:<15}".format(size + " - " + input_folder) + "\t---\t" + str(score) + "\n")
             log_file.close()
 
+
+    log_file = open(dir1 + "/score.log", "a")
+    log_file.write("Average score: " + str(total_score / total_num) + "\n")
+    log_file.close()
+
 if __name__ == '__main__':
-    score, msg = score_output(sys.argv[1], sys.argv[2])
-    print(msg)
-    # score_all()
+    # score, msg = score_output(sys.argv[1], sys.argv[2])
+    # print(msg)
+    score_all(sys.argv[1])

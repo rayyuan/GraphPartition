@@ -1,628 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="big oop">
-      <change afterPath="$PROJECT_DIR$/all_large/1/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/1/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/10/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/10/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/100/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/100/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/101/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/101/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/102/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/102/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/103/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/103/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/104/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/104/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/105/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/105/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/107/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/107/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/108/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/108/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/109/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/109/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/11/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/11/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/110/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/110/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/111/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/111/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/112/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/112/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/113/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/113/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/114/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/114/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/115/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/115/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/116/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/116/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/117/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/117/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/118/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/118/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/119/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/119/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/12/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/12/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/120/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/120/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/121/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/121/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/122/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/122/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/123/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/123/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/124/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/124/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/125/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/125/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/126/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/126/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/127/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/127/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/128/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/128/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/129/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/129/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/13/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/13/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/130/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/130/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/131/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/131/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/132/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/132/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/133/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/133/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/134/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/134/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/135/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/135/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/136/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/136/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/137/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/137/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/138/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/138/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/14/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/14/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/140/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/140/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/141/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/141/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/143/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/143/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/144/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/144/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/145/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/145/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/146/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/146/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/147/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/147/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/148/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/148/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/149/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/149/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/15/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/15/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/150/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/150/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/151/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/151/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/152/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/152/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/154/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/154/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/155/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/155/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/156/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/156/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/157/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/157/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/158/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/158/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/159/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/159/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/16/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/16/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/160/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/160/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/161/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/161/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/163/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/163/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/164/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/164/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/165/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/165/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/166/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/166/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/167/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/167/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/168/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/168/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/169/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/169/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/17/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/17/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/170/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/170/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/171/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/171/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/172/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/172/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/173/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/173/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/174/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/174/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/175/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/175/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/176/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/176/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/177/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/177/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/179/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/179/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/18/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/18/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/180/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/180/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/182/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/182/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/183/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/183/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/184/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/184/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/185/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/185/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/186/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/186/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/187/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/187/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/189/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/189/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/19/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/19/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/190/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/190/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/191/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/191/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/192/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/192/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/193/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/193/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/194/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/194/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/195/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/195/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/196/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/196/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/197/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/197/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/198/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/198/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/199/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/199/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/2/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/2/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/20/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/20/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/200/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/200/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/201/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/201/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/202/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/202/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/203/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/203/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/204/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/204/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/205/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/205/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/206/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/206/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/207/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/207/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/208/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/208/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/209/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/209/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/21/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/21/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/210/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/210/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/211/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/211/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/212/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/212/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/213/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/213/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/214/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/214/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/215/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/215/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/216/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/216/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/217/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/217/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/218/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/218/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/219/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/219/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/220/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/220/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/221/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/221/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/222/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/222/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/223/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/223/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/224/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/224/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/225/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/225/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/226/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/226/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/227/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/227/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/228/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/228/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/229/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/229/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/23/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/23/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/230/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/230/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/232/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/232/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/233/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/233/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/234/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/234/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/235/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/235/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/236/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/236/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/237/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/237/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/238/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/238/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/239/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/239/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/24/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/24/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/240/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/240/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/241/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/241/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/242/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/242/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/243/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/243/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/244/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/244/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/245/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/245/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/246/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/246/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/247/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/247/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/248/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/248/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/249/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/249/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/25/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/25/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/251/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/251/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/252/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/252/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/253/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/253/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/254/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/254/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/255/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/255/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/256/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/256/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/257/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/257/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/259/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/259/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/26/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/26/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/260/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/260/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/261/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/261/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/262/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/262/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/263/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/263/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/264/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/264/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/265/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/265/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/266/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/266/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/267/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/267/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/268/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/268/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/269/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/269/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/27/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/27/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/270/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/270/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/271/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/271/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/272/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/272/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/274/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/274/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/275/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/275/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/276/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/276/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/277/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/277/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/278/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/278/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/279/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/279/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/28/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/28/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/280/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/280/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/281/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/281/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/282/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/282/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/283/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/283/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/284/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/284/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/285/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/285/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/286/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/286/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/288/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/288/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/289/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/289/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/29/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/29/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/290/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/290/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/291/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/291/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/292/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/292/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/293/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/293/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/294/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/294/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/295/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/295/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/296/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/296/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/297/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/297/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/298/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/298/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/299/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/299/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/3/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/3/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/30/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/30/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/300/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/300/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/301/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/301/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/303/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/303/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/305/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/305/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/306/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/306/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/307/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/307/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/308/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/308/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/309/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/309/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/31/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/31/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/310/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/310/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/311/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/311/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/313/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/313/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/314/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/314/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/315/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/315/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/316/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/316/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/317/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/317/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/318/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/318/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/319/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/319/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/32/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/32/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/320/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/320/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/323/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/323/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/324/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/324/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/325/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/325/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/326/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/326/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/327/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/327/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/328/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/328/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/329/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/329/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/33/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/33/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/330/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/330/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/331/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/331/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/34/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/34/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/35/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/35/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/36/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/36/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/37/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/37/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/38/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/38/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/4/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/4/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/40/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/40/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/41/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/41/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/42/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/42/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/43/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/43/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/44/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/44/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/45/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/45/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/46/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/46/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/47/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/47/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/48/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/48/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/49/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/49/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/5/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/5/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/50/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/50/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/51/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/51/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/52/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/52/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/53/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/53/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/54/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/54/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/55/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/55/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/56/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/56/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/57/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/57/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/58/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/58/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/59/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/59/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/6/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/6/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/60/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/60/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/61/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/61/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/62/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/62/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/63/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/63/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/64/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/64/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/65/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/65/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/66/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/66/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/67/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/67/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/68/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/68/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/69/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/69/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/7/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/7/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/70/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/70/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/71/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/71/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/72/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/72/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/73/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/73/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/74/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/74/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/75/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/75/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/76/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/76/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/77/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/77/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/78/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/78/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/79/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/79/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/8/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/8/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/81/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/81/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/82/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/82/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/83/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/83/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/84/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/84/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/85/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/85/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/86/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/86/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/87/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/87/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/88/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/88/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/89/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/89/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/9/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/9/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/90/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/90/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/91/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/91/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/92/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/92/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/93/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/93/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/94/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/94/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/95/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/95/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/96/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/96/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/97/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/97/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/98/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/98/parameters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/99/graph.gml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/all_large/99/parameters.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="big oop" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -635,113 +14,96 @@
     <SUITE FILE_PATH="coverage/GraphPartition$generate_input.coverage" NAME="generate input Coverage Results" MODIFIED="1542071462149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jared" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3874781">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/solver.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="288" column="51" selection-start-line="288" selection-start-column="48" selection-end-line="288" selection-end-column="51" />
-                  <folding>
-                    <element signature="e#0#21#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/start.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="33" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/start_rewrite.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="22" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
-                  <folding>
-                    <element signature="e#0#21#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/large/1009/parameters.txt">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/output_scorer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="952">
-                  <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/output_comparator.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="951">
-                  <caret line="145" selection-start-line="145" selection-end-line="145" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="542">
-                  <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#21#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/start_rewrite_32.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/solver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4260">
+              <caret line="288" column="51" selection-start-line="288" selection-start-column="48" selection-end-line="288" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="33" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start_rewrite.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1821">
+              <caret line="60" selection-start-line="60" selection-end-line="70" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/large/1009/parameters.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output_scorer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output_comparator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1443">
+              <caret selection-end-line="147" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output_combiner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="121" column="58" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -797,17 +159,16 @@
         <option value="$PROJECT_DIR$/solver.py" />
         <option value="$PROJECT_DIR$/start_rewrite.sh" />
         <option value="$PROJECT_DIR$/start_rewrite_32.sh" />
-        <option value="$PROJECT_DIR$/output_scorer.py" />
         <option value="$PROJECT_DIR$/output_comparator.py" />
         <option value="$PROJECT_DIR$/solver_rewrite.py" />
+        <option value="$PROJECT_DIR$/output_combiner.py" />
+        <option value="$PROJECT_DIR$/output_scorer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1680" />
-    <option name="y" value="-390" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -817,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -828,7 +190,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -837,17 +198,18 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/outputs_4_small_medium" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/outputs" />
+      <recent name="$PROJECT_DIR$/deliverable1/inputs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/deliverable1/inputs/small" />
       <recent name="$PROJECT_DIR$/deliverable1/inputs/medium" />
       <recent name="$PROJECT_DIR$/jared" />
       <recent name="$PROJECT_DIR$/kyle" />
       <recent name="$PROJECT_DIR$/ray" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/outputs" />
-      <recent name="$PROJECT_DIR$/deliverable1/inputs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -927,6 +289,7 @@
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
       <workItem from="1543639669099" duration="21870000" />
+      <workItem from="1543796924437" duration="4173000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -1208,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543796664666</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="big oop">
+      <created>1543796989782</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1543796989782</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27374000" />
+    <option name="totallyTimeSpent" value="31547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1224,10 +594,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="-390" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0929309" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14346765" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1240,7 +610,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.24731183" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4960286" weight="0.21459854" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" visible="true" weight="0.17372262" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" visible="true" weight="0.24285714" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" sideWeight="0.4984089" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -1284,7 +654,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="big oop" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kyle/solver.py" />
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/medium/first/graph.gml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1475,12 +844,6 @@
     <entry file="file://$PROJECT_DIR$/large/1009/graph.gml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/large/1009/parameters.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/outputs_3_nearly_complete/score.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1989">
@@ -1488,15 +851,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/score.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/score.log" />
     <entry file="file://$PROJECT_DIR$/comparison_results.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="4260">
           <caret line="288" column="51" selection-start-line="288" selection-start-column="48" selection-end-line="288" selection-end-column="51" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -1511,13 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start_rewrite_32.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/start_rewrite.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1525,10 +879,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_scorer.py">
+    <entry file="file://$PROJECT_DIR$/large/1009/parameters.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small/119/graph.gml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_rewrite_32.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_combiner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="121" column="58" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1537,8 +904,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output_comparator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="951">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="-1443">
+          <caret selection-end-line="147" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_scorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1547,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        <state relative-caret-position="-1821">
+          <caret line="60" selection-start-line="60" selection-end-line="70" selection-end-column="33" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
