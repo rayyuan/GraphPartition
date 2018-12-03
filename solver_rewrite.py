@@ -82,7 +82,8 @@ def main():
         output_file.close()
     else:
         # log_file = open("outputs/runtime.log", "w")
-        size_categories = ["small", "medium", "large"]
+        # size_categories = ["small", "medium", "large"]
+        size_categories = ["all-large"]
 
         for size in size_categories:
             category_path = path_to_inputs + "/" + size

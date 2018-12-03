@@ -108,6 +108,7 @@ def compare(dir1, dir2):
 
     dir1_bigger = 0
     dir2_bigger = 0
+    total = 0
 
     for size in size_categories:
 
@@ -136,9 +137,10 @@ def compare(dir1, dir2):
                 dir2_bigger += 1
                 log_file.write("{:<12}".format(size + " - " + input_folder) + " --- " + "{:<25}".format(str(score1)) + "  <  " + str(score2) + "\n")
             log_file.close()
+            total += 1
 
     log_file = open("comparison_results.log", "a")
-    log_file.write(dir1 + ": " + str(dir1_bigger) + "      " + dir2 + ": " + str(dir2_bigger) + "\n\n")
+    log_file.write(dir1 + ": " + str(dir1_bigger) + "      " + dir2 + ": " + str(dir2_bigger) + "      total:" + str(total) + "\n\n")
     log_file.close()
 
 
