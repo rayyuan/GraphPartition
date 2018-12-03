@@ -70,6 +70,9 @@ def main():
     if not os.path.isdir("outputs/large"):
         os.mkdir("outputs/large")
 
+    if not os.path.isdir("outputs/all_large"):
+        os.mkdir("outputs/all_large")
+
     if sys.argv[1] == "--file":
         graph, num_buses, size_bus, constraints = parse_input(sys.argv[2])
         solution = solve(graph, num_buses, size_bus, constraints)
@@ -83,7 +86,7 @@ def main():
     else:
         # log_file = open("outputs/runtime.log", "w")
         # size_categories = ["small", "medium", "large"]
-        size_categories = ["all-large"]
+        size_categories = ["all_large"]
 
         for size in size_categories:
             category_path = path_to_inputs + "/" + size
