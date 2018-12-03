@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="big oop" />
+    <list default="true" id="ecf3aa9b-a6b0-4d87-98ea-f96da585dc8c" name="Default" comment="big oop">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +47,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1821">
-              <caret line="60" selection-start-line="60" selection-end-line="70" selection-end-column="33" />
+            <state relative-caret-position="286">
+              <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -160,9 +171,10 @@
         <option value="$PROJECT_DIR$/start_rewrite.sh" />
         <option value="$PROJECT_DIR$/start_rewrite_32.sh" />
         <option value="$PROJECT_DIR$/output_comparator.py" />
-        <option value="$PROJECT_DIR$/solver_rewrite.py" />
         <option value="$PROJECT_DIR$/output_combiner.py" />
         <option value="$PROJECT_DIR$/output_scorer.py" />
+        <option value="$PROJECT_DIR$/solver_rewrite.py" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -289,7 +301,7 @@
       <workItem from="1543563534861" duration="541000" />
       <workItem from="1543564688266" duration="4963000" />
       <workItem from="1543639669099" duration="21870000" />
-      <workItem from="1543796924437" duration="4173000" />
+      <workItem from="1543796924437" duration="4692000" />
     </task>
     <task id="LOCAL-00001" summary="separated solutions folders and added deliverable 1">
       <created>1541905330771</created>
@@ -582,7 +594,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31547000" />
+    <option name="totallyTimeSpent" value="32066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,7 +607,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14346765" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -654,9 +665,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="big oop" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deliverable1/inputs/medium/first/graph.gml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/deliverable1/inputs/medium/first/parameters.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -924,11 +932,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/solver_rewrite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1821">
-          <caret line="60" selection-start-line="60" selection-end-line="70" selection-end-column="33" />
+        <state relative-caret-position="286">
+          <caret line="73" column="39" lean-forward="true" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
         </state>
       </provider>
     </entry>
