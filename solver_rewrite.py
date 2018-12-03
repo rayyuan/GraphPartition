@@ -70,8 +70,8 @@ def main():
     if not os.path.isdir("outputs/large"):
         os.mkdir("outputs/large")
 
-    if not os.path.isdir("outputs/all_large"):
-        os.mkdir("outputs/all_large")
+    # if not os.path.isdir("outputs/all_large"):
+    #     os.mkdir("outputs/all_large")
 
     if sys.argv[1] == "--file":
         graph, num_buses, size_bus, constraints = parse_input(sys.argv[2])
@@ -85,8 +85,8 @@ def main():
         output_file.close()
     else:
         # log_file = open("outputs/runtime.log", "w")
-        # size_categories = ["small", "medium", "large"]
-        size_categories = ["all_large"]
+        size_categories = ["small", "medium", "large"]
+        # size_categories = ["all_large"]
 
         for size in size_categories:
             category_path = path_to_inputs + "/" + size
@@ -184,7 +184,7 @@ def gen_starting_solution(num_buses, node_list, size_bus):
 
     return s
 
-def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=300):
+def anneal(s, r, size_bus, constraints, temp=1.0, temp_min=0.00001, alpha=0.9, n_iter=500):
     cost_old = cost(s, r, constraints)
 
     while temp > temp_min:
